@@ -342,7 +342,7 @@ for (time.point in time.points)
 
   for (name in names(r0_trajectories[[tp]][[1]]))
   {
-    r0_trajectories[[tp]][[1]][[name]]
+    r0_trajectories[[tp]][[1]][[name]] <- r0_trajectories[[tp]][[1]][[name]][value > 0]
     r0_trajectories[[tp]][[1]][[name]][, county := name]
   }
   trajectories <- rbindlist(r0_trajectories[[tp]][[1]])
