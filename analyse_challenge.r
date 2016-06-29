@@ -280,127 +280,132 @@ write.table(disease_params, file = "disease_param.csv", row.names = FALSE,
 model_data <- list()
 for (time.point in time.points)
 {
-  tp <- paste("time", time.point, sep = ".")
+    tp <- paste("time", time.point, sep = ".")
 
-  for (name in names(full_predictions[[tp]][[1]]))
-  {
-    full_predictions[[tp]][[1]][[name]][, county := name]
-  }
-  predictions_point <- rbindlist(full_predictions[[tp]][[1]])
+    for (name in names(full_predictions[[tp]][[1]]))
+    {
+      full_predictions[[tp]][[1]][[name]][, county := name]
+    }
+    predictions_point <- rbindlist(full_predictions[[tp]][[1]])
 
-  flawed <- unique(predictions_point[value > 1e+10, list(np, county)])
-  flawed[, flawed := TRUE]
+    flawed <- unique(predictions_point[value > 1e+10, list(np, county)])
+    flawed[, flawed := TRUE]
 
-  predictions_point <- merge(predictions_point, flawed, all.x = TRUE, by = c("np", "county"))
-  predictions_point <- predictions_point[is.na(flawed)]
-  predictions_point[, flawed := NULL]
+    predictions_point <- merge(predictions_point, flawed, all.x = TRUE, by = c("np", "county"))
+    predictions_point <- predictions_point[is.na(flawed)]
+    predictions_point[, flawed := NULL]
 
-  max.cases <- cases[["time.5"]][[1]][, list(max.value = max(value)), by = county]
-  keep_counties <- max.cases[max.value > 5]
-  plot.cases <- cases[["time.5"]][[1]][county %in% keep_counties[, county]]
+    max.cases <- cases[["time.5"]][[1]][, list(max.value = max(value)), by = county]
+    keep_counties <- max.cases[max.value > 5]
+    plot.cases <- cases[["time.5"]][[1]][county %in% keep_counties[, county]]
 
-  agg <- predictions_point[county %in% keep_counties[, county], list(mean = median(value), min.1 = quantile(value, 0.25), max.1 = quantile(value, 0.75), min.2 = quantile(value, 0.025), max.2 = quantile(value, 0.975)), by = c("county", "time")]
-  agg[, week := time / 7]
+    agg <- predictions_point[county %in% keep_counties[, county], list(mean = median(value), min.1 = quantile(value, 0.25), max.1 = quantile(value, 0.75), min.2 = quantile(value, 0.025), max.2 = quantile(value, 0.975)), by = c("county", "time")]
+    agg[, week := time / 7]
 
-  agg <- merge(agg, max.cases, by = "county", all.x = TRUE)
-  agg[max.2 > max.value * 2, max.2 := max.value * 2]
-  agg[max.1 > max.value * 2, max.1 := max.value * 2]
-  agg[mean > max.value * 2, mean := NA]
-  agg[min.1 > max.value * 2, min.1 := max.value * 2]
-  agg[min.2 > max.value * 2, min.2 := max.value * 2]
-  agg[min.1 < 0, min.1 := 0]
-  agg[min.2 < 0, min.2 := 0]
-  agg[mean < 0, mean := 0]
+    agg <- merge(agg, max.cases, by = "county", all.x = TRUE)
+    agg[max.2 > max.value * 2, max.2 := max.value * 2]
+    agg[max.1 > max.value * 2, max.1 := max.value * 2]
+    agg[mean > max.value * 2, mean := NA]
+    agg[min.1 > max.value * 2, min.1 := max.value * 2]
+    agg[min.2 > max.value * 2, min.2 := max.value * 2]
+    agg[min.1 < 0, min.1 := 0]
+    agg[min.2 < 0, min.2 := 0]
+    agg[mean < 0, mean := 0]
 
-  max.data <- data.time.points[point == time.point, time]
+    max.data <- data.time.points[point == time.point, time]
 
-  plot.cases[, type := "fit"]
+    plot.cases[, type := "fit"]
 
-  county_levels <- c(setdiff(unique(plot.cases[, county]), "Liberia"), "Liberia")
+    county_levels <- c(setdiff(unique(plot.cases[, county]), "Liberia"), "Liberia")
 
-  agg[, county := factor(county, levels = county_levels)]
-  plot.cases[, county := factor(county, levels = county_levels)]
+    agg[, county := factor(county, levels = county_levels)]
+    plot.cases[, county := factor(county, levels = county_levels)]
 
-  plot.cases[week <= max.data, forecast := FALSE]
-  plot.cases[is.na(forecast), forecast := TRUE]
+    plot.cases[week <= max.data, forecast := FALSE]
+    plot.cases[is.na(forecast), forecast := TRUE]
 
-  fit <- agg[week <= max.data]
-  fit[, type := "fit"]
-  pred <- agg[week > max.data]
-  pred[, type := "forecast"]
+    fit <- agg[week <= max.data]
+    fit[, type := "fit"]
+    pred <- agg[week > max.data]
+    pred[, type := "forecast"]
 
-  p <- ggplot(fit, aes(x = week, y = mean)) +
-    geom_line() +
-    geom_ribbon(aes(ymin = min.1, ymax = max.1), alpha = 0.5) +
-    geom_ribbon(aes(ymin = min.2, ymax = max.2), alpha = 0.25) +
-    facet_wrap(~ county, scales = "free") +
-    geom_point(data = plot.cases[forecast == FALSE], aes(y = value), color = "red") +
-    geom_point(data = plot.cases[forecast == TRUE], aes(y = value), color = "black") +
-    scale_y_continuous("Incidence") +
-    geom_line(data = pred[week < max.data + 54], color = "blue") + 
-    geom_ribbon(data = pred[week < max.data + 54], aes(ymin = min.1, ymax = max.1), alpha = 0.5, fill = "blue") +
-    geom_ribbon(data = pred[week < max.data + 54], aes(ymin = min.2, ymax = max.2), alpha = 0.25, fill = "blue")
+    for (horizon in c(7, 52))
+    {
+      p <- ggplot(fit, aes(x = week, y = mean)) +
+        geom_line() +
+        geom_ribbon(aes(ymin = min.1, ymax = max.1), alpha = 0.5) +
+        geom_ribbon(aes(ymin = min.2, ymax = max.2), alpha = 0.25) +
+        facet_wrap(~ county, scales = "free") +
+        geom_point(data = plot.cases[forecast == FALSE], aes(y = value), color = "red") +
+        geom_point(data = plot.cases[forecast == TRUE], aes(y = value), color = "black") +
+        scale_y_continuous("Incidence") +
+        geom_line(data = pred[week > max.data - horizon & week < max.data + horizon + 2], color = "blue") + 
+        geom_ribbon(data = pred[week > max.data - horizon & week < max.data + horizon + 1], aes(ymin = min.1, ymax = max.1), alpha = 0.5, fill = "blue") +
+        geom_ribbon(data = pred[week > max.data - horizon & week < max.data + horizon + 2], aes(ymin = min.2, ymax = max.2), alpha = 0.25, fill = "blue")
 
-  ggsave(paste0("challenge_incidence_", time.point, ".pdf"), p, height = 10, width = 10)
+      ggsave(paste0("challenge_incidence_", time.point, "_", horizon, ".pdf"), p, height = 10, width = 10)
 
-  for (name in names(r0_trajectories[[tp]][[1]]))
-  {
-    r0_trajectories[[tp]][[1]][[name]] <- r0_trajectories[[tp]][[1]][[name]][value > 0]
-    r0_trajectories[[tp]][[1]][[name]][, county := name]
-  }
-  trajectories <- rbindlist(r0_trajectories[[tp]][[1]])
+      for (name in names(r0_trajectories[[tp]][[1]]))
+      {
+        r0_trajectories[[tp]][[1]][[name]] <- r0_trajectories[[tp]][[1]][[name]][value > 0]
+        r0_trajectories[[tp]][[1]][[name]][, county := name]
+      }
+      trajectories <- rbindlist(r0_trajectories[[tp]][[1]])
 
-  agg.r0 <- trajectories[county %in% keep_counties[, county], list(mean = median(value), min.1 = quantile(value, 0.25), max.1 = quantile(value, 0.75), min.2 = quantile(value, 0.025), max.2 = quantile(value, 0.975)), by = c("county", "time")]
-  agg.r0[, week := time / 7]
-  agg.r0[, county := factor(county, levels = county_levels)]
-  agg.r0 <- agg.r0[week <= max.data]
+      agg.r0 <- trajectories[county %in% keep_counties[, county], list(mean = median(value), min.1 = quantile(value, 0.25), max.1 = quantile(value, 0.75), min.2 = quantile(value, 0.025), max.2 = quantile(value, 0.975)), by = c("county", "time")]
+      agg.r0[, week := time / 7]
+      agg.r0[, county := factor(county, levels = county_levels)]
+      agg.r0 <- agg.r0[week <= max.data]
+      agg.r0 <- agg.r0[week > max.data - horizon]
 
-  agg.pred <- rbind(agg.r0[week == max.data][, week := week + 1],
-                    agg.r0[week == max.data][, week := week + 52])
+      agg.pred <- rbind(agg.r0[week == max.data][, week := week + 1],
+                        agg.r0[week == max.data][, week := week + horizon])
 
-  p <- ggplot(agg.r0, aes(x = week, y = mean)) +
-    geom_line() +
-    geom_ribbon(aes(ymin = min.1, ymax = max.1), alpha = 0.5) +
-    geom_ribbon(aes(ymin = min.2, ymax = max.2), alpha = 0.25) +
-    facet_wrap(~ county, scales = "free") +
-    geom_line(data = agg.pred, color = "blue") +
-    geom_ribbon(data = agg.pred, aes(ymin = min.1, ymax = max.1), alpha = 0.5, fill = "blue") +
-    geom_ribbon(data = agg.pred, aes(ymin = min.2, ymax = max.2), alpha = 0.25, fill = "blue") +
-    facet_wrap(~ county, scales = "free") +
-    scale_y_continuous(expression(R[0])) +
-    geom_hline(yintercept = 1, linetype = "dashed")
+      p <- ggplot(agg.r0, aes(x = week, y = mean)) +
+        geom_line() +
+        geom_ribbon(aes(ymin = min.1, ymax = max.1), alpha = 0.5) +
+        geom_ribbon(aes(ymin = min.2, ymax = max.2), alpha = 0.25) +
+        facet_wrap(~ county, scales = "free") +
+        geom_line(data = agg.pred, color = "blue") +
+        geom_ribbon(data = agg.pred, aes(ymin = min.1, ymax = max.1), alpha = 0.5, fill = "blue") +
+        geom_ribbon(data = agg.pred, aes(ymin = min.2, ymax = max.2), alpha = 0.25, fill = "blue") +
+        facet_wrap(~ county, scales = "free") +
+        scale_y_continuous(expression(R[0])) +
+        geom_hline(yintercept = 1, linetype = "dashed")
 
-  ggsave(paste0("challenge_r0_", time.point, ".pdf"), p, height = 10, width = 10)
+      ggsave(paste0("challenge_r0_", time.point, "_", horizon,  ".pdf"), p, height = 10, width = 10)
+    }
 
-  model_data[[tp]] <- data.table(merge(pred, cases$time.5[[1]], by = c("week", "county")))
-  model_data[[tp]][, add.weeks := week - min(week) + 1]
-  model_data[[tp]][, point := time.point]
+    model_data[[tp]] <- data.table(merge(pred, cases$time.5[[1]], by = c("week", "county")))
+    model_data[[tp]][, add.weeks := week - min(week) + 1]
+    model_data[[tp]][, point := time.point]
 
-  for (name in names(param_data[[tp]][[1]]))
-  {
-    param_data[[tp]][[1]][[name]][, county := name]
-  }
-  params_point <- rbindlist(param_data[[tp]][[1]])
-  params_point <- params_point[county %in% keep_counties[, county]]
-  params_point[, county := factor(county, levels = county_levels)]
-  params_point_summary <- params_point[, list(mean = mean(value),
-                                              min = quantile(value, 0.25),
-                                              max = quantile(value, 0.75)),
-                                       by = list(parameter, distribution, varying, county)]
+    for (name in names(param_data[[tp]][[1]]))
+    {
+      param_data[[tp]][[1]][[name]][, county := name]
+    }
+    params_point <- rbindlist(param_data[[tp]][[1]])
+    params_point <- params_point[county %in% keep_counties[, county]]
+    params_point[, county := factor(county, levels = county_levels)]
+    params_point_summary <- params_point[, list(mean = mean(value),
+                                                min = quantile(value, 0.25),
+                                                max = quantile(value, 0.75)),
+                                         by = list(parameter, distribution, varying, county)]
 
-  p <- ggplot(params_point[parameter %in% c("phi", "sigma")],
-              ## aes(x = county, y = mean, ymin = min, ymax = max, color = parameter)) +
-              aes(x = county, y = value, color = parameter)) +
-    geom_boxplot() +
-    scale_color_brewer("", palette = "Set1", labels = c(expression(phi), expression(sigma))) +
-    coord_flip() +
-    scale_x_discrete("") + 
-    scale_y_continuous("") + 
-    theme(legend.position = "top") 
+    p <- ggplot(params_point[parameter %in% c("phi", "sigma")],
+                ## aes(x = county, y = mean, ymin = min, ymax = max, color = parameter)) +
+                aes(x = county, y = value, color = parameter)) +
+      geom_boxplot() +
+      scale_color_brewer("", palette = "Set1", labels = c(expression(phi), expression(sigma))) +
+      coord_flip() +
+      scale_x_discrete("") + 
+      scale_y_continuous("") + 
+      theme(legend.position = "top") 
     ## geom_point() +
     ## geom_errorbar()
-  ggsave(paste0("challenge_error_", time.point, ".pdf"), p, heigh = 7, width = 7)
-  save_plot(paste0("challenge_error_", time.point, ".pdf"), p)
+    ggsave(paste0("challenge_error_", time.point, ".pdf"), p, heigh = 7, width = 7)
+    save_plot(paste0("challenge_error_", time.point, ".pdf"), p)
+  }
 }
 
 compare <- rbindlist(model_data)
