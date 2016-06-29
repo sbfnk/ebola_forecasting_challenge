@@ -27,6 +27,7 @@ libbi_dir <- paste0(code_dir, "libbi/")
 predictions <- list()
 full_predictions <- list()
 r0_trajectories <- list()
+param_data <- list()
 cases <- list()
 
 for (time.point in time.points)
@@ -35,6 +36,7 @@ for (time.point in time.points)
   predictions[[tp]] <- list()
   full_predictions[[tp]] <- list()
   r0_trajectories[[tp]] <- list()
+  param_data[[tp]] <- list()
   cases[[tp]] <- list()
 
   linelist_params <- readRDS(paste0(fit_dir, "/params_", time.point, ".rds"))
@@ -54,6 +56,7 @@ for (time.point in time.points)
     full_predictions[[tp]][[scenario]] <- list()
     r0_trajectories[[tp]][[scenario]] <- list()
     cases[[tp]][[scenario]] <- list()
+    param_data[[tp]][[scenario]] <- list()
     if (scenario == 1)
     {
       data_file <- paste0("sc1_weekly_new_confirmed_EVD_cases_at_county_level_", time.point, ".csv")
@@ -118,17 +121,17 @@ for (time.point in time.points)
 
       p <- plot_libbi(params, model)
 
-      param_data <- p$data$params[distribution == "posterior" & parameter %in% c("p_phi", "p_vol_R0", "p_init_E", "p_init_R0")]
-      param_data[parameter == "p_phi", parameter := "phi"]
-      param_data[parameter == "p_vol_R0", parameter := "sigma"]
-      param_data[parameter == "p_init_E", parameter := "paste(E, \"*\")"]
-      param_data[parameter == "p_init_R0", parameter := "paste(R[0], \"*\")"]
+      param_data[[tp]][[scenario]][[geo]] <- p$data$params[distribution == "posterior" & parameter %in% c("p_phi", "p_vol_R0", "p_init_E", "p_init_R0")]
+      param_data[[tp]][[scenario]][[geo]][parameter == "p_phi", parameter := "phi"]
+      param_data[[tp]][[scenario]][[geo]][parameter == "p_vol_R0", parameter := "sigma"]
+      param_data[[tp]][[scenario]][[geo]][parameter == "p_init_E", parameter := "paste(E, \"*\")"]
+      param_data[[tp]][[scenario]][[geo]][parameter == "p_init_R0", parameter := "paste(R[0], \"*\")"]
 
-      p <- ggplot(param_data, aes(x = value)) +
-        geom_density(adjust = 2, fill = "black") +
-        facet_wrap(~ parameter, scales = "free", labeller = label_parsed) 
+      ## p <- ggplot(param_data, aes(x = value)) +
+      ##   geom_density(adjust = 2, fill = "black") +
+      ##   facet_wrap(~ parameter, scales = "free", labeller = label_parsed) 
 
-      ggsave(paste0("challenge_parameters_", geo, "_", time.point, "_", scenario, ".pdf"), p, height = 7, width = 7)
+      ## ggsave(paste0("challenge_parameters_", geo, "_", time.point, "_", scenario, ".pdf"), p, height = 7, width = 7)
 
       predictions[[tp]][[scenario]][[geo]] <- list()
       pred$Inc <- pred$Z[time %% 7 == 0] ## to be set to zero
@@ -363,7 +366,9 @@ for (time.point in time.points)
     geom_line(data = agg.pred, color = "blue") +
     geom_ribbon(data = agg.pred, aes(ymin = min.1, ymax = max.1), alpha = 0.5, fill = "blue") +
     geom_ribbon(data = agg.pred, aes(ymin = min.2, ymax = max.2), alpha = 0.25, fill = "blue") +
-    facet_wrap(~ county, scales = "free") 
+    facet_wrap(~ county, scales = "free") +
+    scale_y_continuous(expression(R[0])) +
+    geom_hline(yintercept = 1, linetype = "dashed")
 
   ggsave(paste0("challenge_r0_", time.point, ".pdf"), p, height = 10, width = 10)
 
@@ -371,6 +376,31 @@ for (time.point in time.points)
   model_data[[tp]][, add.weeks := week - min(week) + 1]
   model_data[[tp]][, point := time.point]
 
+  for (name in names(param_data[[tp]][[1]]))
+  {
+    param_data[[tp]][[1]][[name]][, county := name]
+  }
+  params_point <- rbindlist(param_data[[tp]][[1]])
+  params_point <- params_point[county %in% keep_counties[, county]]
+  params_point[, county := factor(county, levels = county_levels)]
+  params_point_summary <- params_point[, list(mean = mean(value),
+                                              min = quantile(value, 0.25),
+                                              max = quantile(value, 0.75)),
+                                       by = list(parameter, distribution, varying, county)]
+
+  p <- ggplot(params_point[parameter %in% c("phi", "sigma")],
+              ## aes(x = county, y = mean, ymin = min, ymax = max, color = parameter)) +
+              aes(x = county, y = value, color = parameter)) +
+    geom_boxplot() +
+    scale_color_brewer("", palette = "Set1", labels = c(expression(phi), expression(sigma))) +
+    coord_flip() +
+    scale_x_discrete("") + 
+    scale_y_continuous("") + 
+    theme(legend.position = "top") 
+    ## geom_point() +
+    ## geom_errorbar()
+  ggsave(paste0("challenge_error_", time.point, ".pdf"), p, heigh = 7, width = 7)
+  save_plot(paste0("challenge_error_", time.point, ".pdf"), p)
 }
 
 compare <- rbindlist(model_data)
@@ -388,7 +418,7 @@ mp$weeks <- unlist(mp$weeks)
 mp$value <- unlist(mp$value)
 mp[variable == "inside.50", variable := "inside 50% CI"]
 mp[variable == "inside.95", variable := "inside 95% CI"]
-mp[variable == "greater.mean", variable := "greater than mean"]
+mp[variable == "greater.mean", variable := "greater than median"]
 
 ideal <- data.frame(variable = unique(mp$variable),
                     value = c(0.5, 0.95, 0.5))
