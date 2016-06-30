@@ -331,16 +331,16 @@ for (time.point in time.points)
 
     for (horizon in c(7, 52))
     {
-      p <- ggplot(fit, aes(x = week, y = mean)) +
+      p <- ggplot(fit[week > max.data - horizon & week < max.data + horizon + 2], aes(x = week, y = mean)) +
         geom_line() +
         geom_ribbon(aes(ymin = min.1, ymax = max.1), alpha = 0.5) +
         geom_ribbon(aes(ymin = min.2, ymax = max.2), alpha = 0.25) +
         facet_wrap(~ county, scales = "free") +
-        geom_point(data = plot.cases[forecast == FALSE], aes(y = value), color = "red") +
-        geom_point(data = plot.cases[forecast == TRUE], aes(y = value), color = "black") +
+        geom_point(data = plot.cases[week > max.data - horizon & week < max.data + horizon + 2 & forecast == FALSE], aes(y = value), color = "red") +
+        geom_point(data = plot.cases[week > max.data - horizon & week < max.data + horizon + 2 & forecast == TRUE], aes(y = value), color = "black") +
         scale_y_continuous("Incidence") +
-        geom_line(data = pred[week > max.data - horizon & week < max.data + horizon + 2], color = "blue") + 
-        geom_ribbon(data = pred[week > max.data - horizon & week < max.data + horizon + 1], aes(ymin = min.1, ymax = max.1), alpha = 0.5, fill = "blue") +
+        geom_line(data = pred[week > max.data - horizon & week < max.data + horizon + 2], color = "blue") +
+        geom_ribbon(data = pred[week > max.data - horizon & week < max.data + horizon + 2], aes(ymin = min.1, ymax = max.1), alpha = 0.5, fill = "blue") +
         geom_ribbon(data = pred[week > max.data - horizon & week < max.data + horizon + 2], aes(ymin = min.2, ymax = max.2), alpha = 0.25, fill = "blue")
 
       ggsave(paste0("challenge_incidence_", time.point, "_", horizon, ".pdf"), p, height = 10, width = 10)
@@ -359,7 +359,7 @@ for (time.point in time.points)
       agg.r0 <- agg.r0[week > max.data - horizon]
 
       agg.pred <- rbind(agg.r0[week == max.data][, week := week + 1],
-                        agg.r0[week == max.data][, week := week + horizon])
+                        agg.r0[week == max.data][, week := week + horizon + 1])
 
       p <- ggplot(agg.r0, aes(x = week, y = mean)) +
         geom_line() +
@@ -398,14 +398,13 @@ for (time.point in time.points)
       geom_boxplot() +
       scale_color_brewer("", palette = "Set1", labels = c(expression(phi), expression(sigma))) +
       coord_flip() +
-      scale_x_discrete("") + 
-      scale_y_continuous("") + 
-      theme(legend.position = "top") 
+      scale_x_discrete("") +
+      scale_y_continuous("") +
+      theme(legend.position = "top")
     ## geom_point() +
     ## geom_errorbar()
     ggsave(paste0("challenge_error_", time.point, ".pdf"), p, heigh = 7, width = 7)
     save_plot(paste0("challenge_error_", time.point, ".pdf"), p)
-  }
 }
 
 compare <- rbindlist(model_data)
