@@ -1,8 +1,8 @@
 library('data.table')
 
 fit_dir <- path.expand("~/Data/Ebola/Challenge")
-code_dir <- path.expand("~/code/ebola_cmmid/")
-data_dir <- paste(code_dir, "data/Challenge/", sep = "/")
+code_dir <- path.expand("~/code/ebola_forecasting_challenge/")
+data_dir <- paste(code_dir, "data/", sep = "/")
 
 params <- list()
 
