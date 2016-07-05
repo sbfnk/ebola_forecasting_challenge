@@ -7,7 +7,7 @@
 #$ -pe smp 4
 #$ -q parallel.q
 #$ -R y
-#$ -t 1-6
+#$ -t 1-10
 
 region=${SGE_TASK_ID}
 scenario=1
@@ -15,5 +15,5 @@ scenario=1
 source ~/.bashrc
 source ~/perl5/perlbrew/etc/bashrc
 
-Rscript ~/code/ebola/libbi/fit_challenge.r -r $region -n 10000 -p 256 -t 4 -s $scenario
+Rscript ~/code/ebola_forecasting_challenge/fit_challenge.r -r $region -n 10000 -p 256 -t 4 -s $scenario -i 2
 
