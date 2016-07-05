@@ -4,8 +4,8 @@ onset2notification <- 7 ## assume a week delay in reporting
 
 prediction_window <- 2 * 365 ## number of days to predict
 
-code_dir <- path.expand("~/code/ebola/")
-data_dir <- paste(code_dir, "data/Challenge/", sep = "/")
+code_dir <- path.expand("~/code/ebola_forecasting_challenge/")
+data_dir <- paste(code_dir, "data/", sep = "/")
 fit_dir <- path.expand("~/Data/Ebola/Challenge")
 
 ############################################################################
@@ -86,6 +86,8 @@ if (!any(grep("\\.nc", output)))
 library('RBi')
 library('RBi.helpers')
 library('data.table')
+
+date()
 
 if (scenario == 1) {
     data_file <- paste0("sc1_weekly_new_confirmed_EVD_cases_at_county_level_", time.point, ".csv")
@@ -202,7 +204,7 @@ for (nb in region.nb) {
     print(region)
 
     region.lower <- tolower(gsub(" ", "_", region))
-    dir.region.lower <- paste0(fit_dir, "/", region.lower, "/")
+    dir.region.lower <- paste0(fit_dir, "/Regions/", region.lower, "/")
     dir.region.lower.libbi <- paste0(dir.region.lower, "libbi/")
     dir.region.lower.libbi.work <- paste0(dir.region.lower, "libbi/work_",
                                           scenario, "_", time.point)
@@ -270,9 +272,10 @@ for (nb in region.nb) {
     ## fit the model                                                          ##
     ############################################################################
 
-    ebola_model <- bi_model(paste(code_dir, "libbi", "ebola_fit_challenge.bi",
+    ebola_model <- bi_model(paste(code_dir, "ebola_fit_challenge.bi",
                                   sep = "/"))
-    ebola_deter <- ebola_model$fix_noise(list(n_R0_walk = 0, n_notification = 1))
+    ebola_deter <- ebola_model$clone()
+    ebola_deter$fix(n_R0_walk = 0, n_notification = 1)
     ebola_deter_prior <- ebola_deter$propose_prior()
 
     ## run deterministic model,  sample from prior
@@ -323,7 +326,8 @@ for (nb in region.nb) {
 
     prediction_file_name <- paste0(dir.region.lower.libbi, "pred_", output)
 
-    prediction_model <- ebola_model$fix_noise(list(n_R0_walk = 0))
+    prediction_model <- ebola_model$clone()
+    prediction_model$fix(n_R0_walk = 0)
     prediction_model$remove_block("initial")
 
     lines <- prediction_model$get_lines()
@@ -341,3 +345,5 @@ for (nb in region.nb) {
                         output_file_name = sub("\\.nc$", "_joint.nc",
                                                prediction_file_name))
 }
+
+date()
