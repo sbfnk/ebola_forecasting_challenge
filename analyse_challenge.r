@@ -6,7 +6,7 @@ library('scales')
 library('binom')
 library('cowplot')
 
-time.points <- c(4, 5)
+time.points <- c(1, 2, 4, 5)
 
 data.time.points <- data.table(point = 1:5, time = c(13, 20, NA, 35, 42))
 
@@ -409,16 +409,19 @@ for (time.point in time.points)
 
 compare <- rbindlist(model_data)
 
-pred <- t(sapply(unique(compare[, add.weeks]), function(x)
+pred <- apply(unique(compare[, list(add.weeks, point)]), 1, function(x)
 {
- data.frame(inside.50 = compare[add.weeks == x, sum(min.1 < value & max.1 > value) / .N], 
-            inside.95 = compare[add.weeks == x, sum(min.2 < value & max.2 > value) / .N],
-            greater.mean = compare[add.weeks == x, sum(mean > value, na.rm = TRUE) / .N], 
-            weeks = x)
-}))
+  data.frame(inside.50 = compare[add.weeks == x[["add.weeks"]] & point == x[["point"]], sum(min.1 < value & max.1 > value) / .N], 
+            inside.95 = compare[add.weeks == x[["add.weeks"]] & point == x[["point"]], sum(min.2 < value & max.2 > value) / .N],
+            greater.mean = compare[add.weeks == x[["add.weeks"]] & point == x[["point"]], sum(mean > value, na.rm = TRUE) / .N], 
+            weeks = x[["add.weeks"]], time.point = x[["point"]])
+})
 
-mp <- melt(data.table(pred), id.vars = "weeks")
+pred <- rbindlist(pred)
+
+mp <- melt(data.table(pred), id.vars = c("weeks", "time.point"))
 mp$weeks <- unlist(mp$weeks)
+mp$time.point <- unlist(mp$time.point)
 mp$value <- unlist(mp$value)
 mp[variable == "inside.50", variable := "inside 50% CI"]
 mp[variable == "inside.95", variable := "inside 95% CI"]
@@ -428,7 +431,7 @@ ideal <- data.frame(variable = unique(mp$variable),
                     value = c(0.5, 0.95, 0.5))
 
 p <- ggplot(mp) +
-  geom_point(aes(x = weeks, y = value)) +
+  geom_point(aes(x = weeks, y = value, shape = factor(time.point))) +
   geom_hline(data = ideal, aes(yintercept = value)) +
   facet_wrap(~ variable, ncol = 3) +
   scale_y_continuous("proportion of observations", limits = c(0, 1))
