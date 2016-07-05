@@ -1,0 +1,18 @@
+Patient ID, Infector ID, Infection Time, Symptom Time, Death Time, Burial Time, Age Group, HCW or not, County, Hospital Admission Time, ETU Admission Time, Dischage Time, contact tracing, safe burial, new traced contacts
+4217429, 4217345, 165, 190, 199, 200, 45~100, 0, Montserrado, NA, 196, NA, 0, 1, 0
+4270847, 4217429, 195, 207, 216, 219, 45~100, 0, Montserrado, NA, NA, NA, 0, 1, 0
+4270853, 4217429, 196, 208, 217, 218, 15~44, 0, Montserrado, NA, 214, NA, 0, 1, 2
+4217428, 4217429, 193, 210, 219, 222, 45~100, 0, Montserrado, NA, 216, NA, 0, 1, 0
+4270849, 4270853, 214, 219, NA, NA, 15~44, 0, Montserrado, NA, 224, 237, 0, NA, 2
+4270852, 4270853, 210, 224, 234, 235, 15~44, 0, Montserrado, NA, 232, NA, 0, 1, 16
+4270963, 4270853, 212, 226, 235, 236, 15~44, 0, Montserrado, NA, 231, NA, 0, 1, 0
+4270850, 4270853, 213, 232, NA, NA, 0~14, 0, Montserrado, NA, 237, 248, 0, NA, 0
+4270723, 4270849, 223, 233, NA, NA, 45~100, 0, Montserrado, NA, 233, 254, 1, NA, 24
+4270855, 4270849, 223, 233, 245, 246, 0~14, 0, Montserrado, NA, 233, NA, 1, 1, 7
+4270916, 4270852, 227, 236, 245, 248, 45~100, 0, Montserrado, NA, 236, NA, 1, 1, 4
+4270727, 4270849, 223, 237, 245, 246, 0~14, 0, Montserrado, NA, 237, NA, 1, 1, 3
+4179252, 4270963, 229, 239, 248, 250, 15~44, 0, Montserrado, NA, NA, NA, 0, 1, 0
+2655508, 4270963, 229, 242, NA, NA, 45~100, 0, Margibi, NA, 242, NA, 1, NA, 0
+4270966, 4270963, 227, 245, NA, NA, 15~44, 0, Montserrado, NA, 245, 258, 1, NA, 0
+4179340, 4179252, 240, 248, 256, 257, 0~14, 0, Montserrado, NA, 253, NA, 0, 1, 4
+4179248, 4179252, 246, 258, NA, NA, 15~44, 0, Montserrado, NA, NA, NA, 0, NA, 0

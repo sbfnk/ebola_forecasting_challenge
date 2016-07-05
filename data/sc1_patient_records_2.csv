@@ -1,0 +1,863 @@
+Patient ID,Infector ID,Infection Time,Symptom Time,Death Time,Burial Time,Age Group,HCW or not,County,Hospital Admission Time,ETU Admission Time,Discharge Time,contact tracing,safe burial,new traced contacts
+132556,None,None,105,111,113,15~44,0,Nimba,None,NA,None,0,1,0
+132878,None,None,93,104,105,0~14,0,Nimba,None,NA,None,0,1,0
+883396,1687237,72,None,92,93,15~44,0,Bomi,None,NA,None,0,1,0
+897192,1564495,116,122,132,133,15~44,0,Bomi,None,NA,NA,0,1,0
+897256,None,None,127,136,137,45~100,0,Bomi,130,NA,None,0,1,0
+898389,None,None,62,69,70,15~44,0,Bomi,62,NA,NA,0,1,0
+898859,None,None,106,NA,NA,45~100,0,Bomi,113,NA,125,0,NA,0
+898860,None,None,None,113,115,45~100,0,Bomi,None,NA,None,0,1,0
+902196,None,None,None,127,129,45~100,0,Bomi,122,NA,NA,0,1,0
+902197,None,None,None,107,110,45~100,0,Bomi,None,NA,NA,0,1,0
+902501,None,None,117,NA,NA,45~100,0,Bomi,None,NA,133,0,NA,0
+904601,None,None,86,94,95,0~14,0,Bomi,None,NA,NA,0,1,0
+906846,None,None,112,122,123,15~44,0,Bomi,115,NA,None,0,1,0
+906847,None,None,106,121,122,15~44,0,Bomi,112,NA,None,0,1,0
+906848,None,None,117,127,129,0~14,0,Bomi,121,NA,NA,0,1,0
+906887,None,None,None,119,120,0~14,0,Bomi,112,NA,None,0,1,0
+906888,None,None,120,127,129,0~14,0,Bomi,None,NA,None,0,1,0
+906889,None,None,None,120,123,0~14,0,Bomi,116,NA,NA,0,1,0
+906908,None,None,109,NA,NA,45~100,0,Bomi,113,NA,126,0,NA,0
+906909,None,None,None,134,137,15~44,0,Bomi,126,NA,NA,0,1,0
+906910,906885,103,115,NA,NA,15~44,0,Bomi,121,NA,132,0,NA,0
+906911,None,None,None,127,128,15~44,0,Bomi,None,NA,NA,0,1,0
+906913,None,None,127,136,138,0~14,0,Bomi,130,NA,None,0,1,0
+906933,906911,118,125,132,133,15~44,0,Bomi,129,NA,None,0,1,0
+906936,None,None,None,136,139,0~14,0,Bomi,131,NA,None,0,1,0
+907247,1646495,117,124,135,136,15~44,0,Bomi,128,NA,NA,0,1,0
+909425,None,None,119,128,129,15~44,0,Bomi,123,NA,NA,0,1,0
+909446,None,None,129,135,136,15~44,0,Bomi,133,NA,None,0,1,0
+911929,911930,64,78,NA,NA,45~100,0,Bomi,83,NA,94,0,NA,0
+912036,1504499,74,None,96,97,0~14,0,Bomi,88,NA,NA,0,1,0
+912088,None,None,82,92,94,45~100,0,Bomi,84,NA,None,0,1,0
+912090,911930,67,None,85,88,15~44,0,Bomi,None,NA,None,0,1,0
+914154,None,None,74,81,82,15~44,0,Bomi,None,NA,NA,0,1,0
+914158,None,None,72,82,83,0~14,0,Bomi,None,NA,NA,0,1,0
+915111,1594856,76,None,NA,NA,15~44,0,Bomi,90,NA,None,0,NA,0
+916314,None,None,None,67,70,0~14,0,Bomi,61,NA,NA,0,0,0
+918282,1681167,108,118,129,132,15~44,0,Bomi,123,NA,None,0,1,0
+918283,1681167,107,None,123,126,15~44,0,Bomi,None,NA,NA,0,1,0
+919245,919253,117,125,133,134,45~100,0,Bomi,130,NA,NA,0,1,0
+919249,941472,102,None,126,127,15~44,0,Bomi,114,NA,None,0,1,0
+919250,919246,115,123,131,132,0~14,0,Bomi,None,NA,NA,0,1,0
+919252,None,None,123,132,133,0~14,0,Bomi,126,NA,NA,0,1,0
+919253,None,None,None,NA,NA,0~14,0,Bomi,None,NA,130,0,NA,0
+919254,None,None,121,134,135,15~44,0,Bomi,None,NA,NA,0,1,0
+919313,None,None,None,132,135,15~44,0,Bomi,127,NA,None,0,1,0
+919331,941272,90,None,103,104,45~100,0,Bomi,None,NA,NA,0,1,0
+920203,None,None,None,132,133,45~100,0,Bomi,126,NA,NA,0,1,0
+930247,1681226,85,None,106,107,15~44,0,Bomi,None,NA,None,0,1,0
+930251,None,None,None,101,103,0~14,0,Bomi,95,NA,NA,0,1,0
+931204,1682704,109,117,128,130,45~100,0,Bomi,121,NA,NA,0,1,0
+931225,None,None,128,133,135,15~44,0,Bomi,None,NA,NA,0,1,0
+931816,None,None,61,69,70,45~100,0,Bomi,64,NA,NA,0,1,0
+939050,None,None,None,57,58,0~14,0,Bomi,None,NA,None,0,0,0
+941208,None,None,88,99,100,15~44,0,Bomi,94,NA,NA,0,1,0
+941211,955950,81,92,100,101,15~44,0,Bomi,97,NA,NA,0,1,0
+941226,None,None,98,109,112,45~100,0,Bomi,None,NA,None,0,1,0
+941227,None,None,124,137,138,45~100,0,Bomi,None,NA,None,0,1,0
+941228,941232,112,None,128,129,45~100,0,Bomi,124,NA,None,0,1,0
+941229,None,None,122,129,130,45~100,0,Bomi,126,NA,NA,0,1,0
+941230,None,None,None,131,134,45~100,0,Bomi,129,NA,NA,0,1,0
+941256,941445,15,None,33,35,0~14,0,Bomi,26,NA,None,0,0,0
+941258,941260,47,None,74,76,15~44,0,Bomi,None,NA,None,0,1,0
+941259,None,None,49,55,58,45~100,0,Bomi,51,NA,NA,0,0,0
+941260,None,None,None,54,57,15~44,0,Bomi,None,NA,None,0,0,0
+941261,None,None,39,47,48,0~14,0,Bomi,41,NA,None,0,0,0
+941263,941260,55,64,70,71,15~44,0,Bomi,None,NA,NA,0,1,0
+941269,None,None,93,102,105,15~44,0,Bomi,None,NA,NA,0,1,0
+941270,None,None,104,114,117,15~44,0,Bomi,None,NA,NA,0,1,0
+941271,None,None,102,109,112,15~44,0,Bomi,None,NA,None,0,1,0
+941272,None,None,88,94,95,15~44,0,Bomi,None,NA,None,0,1,0
+941273,None,None,101,110,111,15~44,0,Bomi,101,NA,NA,0,1,0
+941274,941275,109,118,131,134,0~14,0,Bomi,None,NA,NA,0,1,0
+941275,None,None,106,114,116,45~100,0,Bomi,None,NA,NA,0,1,0
+941278,None,None,105,117,120,0~14,0,Bomi,108,NA,NA,0,1,0
+941345,941396,62,70,81,82,15~44,0,Bomi,None,NA,None,0,1,0
+941372,941396,61,69,78,81,15~44,0,Bomi,73,NA,NA,0,1,0
+941379,None,None,None,52,53,15~44,0,Bomi,47,NA,NA,0,0,0
+941393,None,None,None,78,79,15~44,0,Bomi,None,NA,None,0,1,0
+941394,None,None,None,65,66,15~44,0,Bomi,59,NA,NA,0,0,0
+941395,None,None,66,76,79,0~14,0,Bomi,None,NA,NA,0,1,0
+941396,None,None,None,60,62,0~14,0,Bomi,57,NA,None,0,0,0
+941397,941396,55,61,67,68,0~14,0,Bomi,66,NA,NA,0,0,0
+941399,None,None,62,73,74,15~44,0,Bomi,65,NA,NA,0,1,0
+941400,941396,61,73,86,87,0~14,0,Bomi,82,NA,NA,0,1,0
+941401,None,None,86,95,96,0~14,0,Bomi,91,NA,NA,0,1,0
+941416,None,None,101,117,120,15~44,0,Bomi,109,NA,NA,0,1,0
+941417,None,None,95,114,115,15~44,0,Bomi,104,NA,None,0,1,0
+941431,None,None,85,94,95,45~100,0,Bomi,None,NA,None,0,1,0
+941435,None,None,78,NA,NA,45~100,0,Bomi,None,NA,92,0,NA,0
+941436,None,None,None,92,93,45~100,0,Bomi,None,NA,NA,0,1,0
+941438,None,None,28,39,42,15~44,0,Bomi,None,NA,NA,0,0,0
+941440,None,None,None,NA,NA,0~14,0,Bomi,46,NA,67,0,NA,0
+941441,None,None,30,42,43,0~14,0,Bomi,37,NA,None,0,0,0
+941442,None,None,27,36,37,45~100,0,Bomi,None,NA,NA,0,0,0
+941443,None,None,None,NA,NA,45~100,0,Bomi,25,NA,None,0,NA,0
+941444,941445,16,28,40,41,15~44,0,Bomi,None,NA,None,0,0,0
+941445,1405939,2,15,23,24,15~44,0,Bomi,18,NA,NA,0,0,0
+941446,None,None,24,33,36,15~44,0,Bomi,30,NA,NA,0,0,0
+941447,None,None,28,NA,NA,15~44,0,Bomi,None,NA,None,0,NA,0
+941448,None,None,None,39,40,15~44,0,Bomi,30,NA,NA,0,0,0
+941449,None,None,36,48,49,0~14,0,Bomi,42,NA,NA,0,0,0
+941450,None,None,27,NA,NA,15~44,0,Bomi,31,NA,None,0,NA,0
+941451,None,None,None,38,39,0~14,0,Bomi,35,NA,NA,0,0,0
+941452,None,None,None,NA,NA,0~14,0,Bomi,None,NA,63,0,NA,0
+941453,None,None,46,55,56,0~14,0,Bomi,50,NA,None,0,0,0
+941454,941445,18,22,30,33,15~44,0,Bomi,28,NA,NA,0,0,0
+941468,None,None,107,NA,NA,45~100,0,Bomi,None,NA,None,0,NA,0
+941469,None,None,None,123,124,45~100,0,Bomi,None,NA,NA,0,1,0
+941470,None,None,61,76,78,15~44,0,Bomi,68,NA,None,0,1,0
+941471,None,None,None,74,76,15~44,0,Bomi,None,NA,NA,0,1,0
+941473,None,None,None,NA,NA,15~44,0,Bomi,None,NA,89,0,NA,0
+941480,941472,106,116,124,125,15~44,0,Bomi,None,NA,NA,0,1,0
+941495,None,None,None,NA,NA,15~44,0,Bomi,91,NA,None,0,NA,0
+941496,None,None,91,108,111,15~44,0,Bomi,99,NA,NA,0,1,0
+941500,None,None,None,NA,NA,0~14,0,Bomi,111,NA,128,0,NA,0
+941508,None,None,75,83,84,45~100,0,Bomi,None,NA,NA,0,1,0
+941513,None,None,80,90,91,0~14,0,Bomi,84,NA,None,0,1,0
+941514,941396,56,None,NA,NA,0~14,0,Bomi,73,NA,87,0,NA,0
+941516,None,None,None,97,98,0~14,0,Bomi,84,NA,NA,0,1,0
+943084,943085,77,None,103,104,45~100,0,Bomi,None,NA,NA,0,1,0
+943085,None,None,None,NA,NA,15~44,0,Bomi,None,NA,None,0,NA,0
+943086,None,None,None,96,99,0~14,0,Bomi,90,NA,NA,0,1,0
+943088,None,None,None,99,101,15~44,0,Bomi,None,NA,NA,0,1,0
+943216,None,None,129,136,139,45~100,0,Bomi,132,NA,NA,0,1,0
+944809,1599121,73,81,NA,NA,45~100,0,Bomi,84,NA,96,0,NA,0
+948072,None,None,120,NA,NA,15~44,0,Bomi,None,NA,139,0,NA,0
+948075,1497807,102,111,122,124,0~14,0,Bomi,None,NA,None,0,1,0
+949757,949760,92,None,NA,NA,15~44,0,Bomi,113,NA,None,0,NA,0
+949758,None,None,98,110,112,15~44,0,Bomi,103,NA,None,0,1,0
+949759,949965,75,91,102,103,15~44,0,Bomi,95,NA,NA,0,1,0
+949763,None,None,86,95,97,0~14,0,Bomi,88,NA,NA,0,1,0
+949802,None,None,None,NA,NA,45~100,0,Bomi,70,NA,None,0,NA,0
+949804,None,None,None,90,92,15~44,0,Bomi,None,NA,NA,0,1,0
+949806,None,None,58,67,70,0~14,0,Bomi,63,NA,NA,0,0,0
+949965,None,None,None,NA,NA,15~44,0,Bomi,None,NA,95,0,NA,0
+949966,None,None,91,103,106,0~14,0,Bomi,99,NA,None,0,1,0
+950047,None,None,90,97,98,15~44,0,Bomi,95,NA,None,0,1,0
+950050,None,None,None,115,118,0~14,0,Bomi,None,NA,NA,0,1,0
+950051,949966,99,113,123,126,0~14,0,Bomi,None,NA,NA,0,1,0
+950070,None,None,None,113,116,15~44,0,Bomi,105,NA,None,0,1,0
+950072,None,None,103,NA,NA,0~14,0,Bomi,108,NA,129,0,NA,0
+950120,None,None,122,132,133,15~44,0,Bomi,125,NA,NA,0,1,0
+950158,None,None,128,136,138,45~100,0,Bomi,None,NA,None,0,1,0
+955949,None,None,85,93,96,15~44,0,Bomi,89,NA,None,0,1,0
+955954,1688042,66,None,83,84,15~44,0,Bomi,78,NA,NA,0,1,0
+957787,1534335,119,None,NA,NA,15~44,0,Bomi,132,NA,None,0,NA,0
+957996,None,None,None,101,104,0~14,0,Bomi,None,NA,NA,0,1,0
+958437,None,None,92,106,107,15~44,0,Bomi,None,NA,NA,0,1,0
+961863,906911,114,121,130,131,0~14,0,Bomi,None,NA,None,0,1,0
+963388,None,None,None,108,109,15~44,0,Bomi,None,NA,None,0,1,0
+966791,None,None,None,136,137,15~44,0,Bomi,134,NA,NA,0,1,0
+972642,None,None,125,132,133,15~44,0,Bomi,None,NA,NA,0,1,0
+972643,None,None,118,127,129,0~14,0,Bomi,123,NA,NA,0,1,0
+972644,None,None,None,108,109,0~14,0,Bomi,None,NA,NA,0,1,0
+972693,None,None,126,NA,NA,15~44,0,Bomi,None,NA,None,0,NA,0
+975477,None,None,None,136,137,45~100,0,Bomi,131,NA,NA,0,1,0
+982521,1141679,105,119,NA,NA,45~100,1,Bong,125,NA,None,0,NA,0
+983061,None,None,89,NA,NA,45~100,1,Bong,None,NA,109,0,NA,0
+989060,None,None,None,NA,NA,15~44,1,Bong,None,NA,138,0,NA,0
+1001365,1406091,53,64,NA,NA,15~44,1,Bong,None,NA,82,0,NA,0
+1007035,1371582,110,None,NA,NA,15~44,1,Bong,122,NA,None,0,NA,0
+1009845,None,None,None,120,121,15~44,0,Bong,None,NA,None,0,1,0
+1009846,None,None,97,110,113,15~44,0,Bong,None,NA,None,0,1,0
+1020149,None,None,108,NA,NA,15~44,1,Bong,None,NA,None,0,NA,0
+1020154,None,None,120,NA,NA,15~44,0,Bong,125,NA,None,0,NA,0
+1041395,None,None,None,130,133,45~100,0,Bong,122,NA,NA,0,1,0
+1041397,None,None,122,132,135,15~44,0,Bong,None,NA,NA,0,1,0
+1041398,None,None,120,136,137,15~44,0,Bong,128,NA,NA,0,1,0
+1041399,None,None,110,126,128,15~44,0,Bong,None,NA,NA,0,1,0
+1041403,None,None,130,136,138,0~14,0,Bong,None,NA,NA,0,1,0
+1041404,1041399,111,121,131,132,0~14,0,Bong,123,NA,None,0,1,0
+1041681,None,None,120,133,134,45~100,0,Bong,None,NA,NA,0,1,0
+1046900,1041399,115,None,134,135,15~44,0,Bong,131,NA,NA,0,1,0
+1059881,None,None,None,NA,NA,15~44,0,Bong,128,NA,None,0,NA,0
+1079282,None,None,None,124,127,45~100,0,Bong,122,NA,NA,0,1,0
+1122349,2609227,107,None,128,131,15~44,0,Bong,None,NA,None,0,1,0
+1131330,None,None,116,126,128,15~44,0,Bong,118,NA,NA,0,1,0
+1131331,None,None,109,119,120,45~100,0,Bong,None,NA,NA,0,1,0
+1134186,None,None,None,131,133,0~14,0,Bong,None,NA,None,0,1,0
+1141679,None,None,91,105,107,15~44,0,Bong,99,NA,NA,0,1,0
+1141680,None,None,79,88,91,15~44,0,Bong,None,NA,None,0,1,0
+1141682,None,None,103,114,115,0~14,0,Bong,None,NA,NA,0,1,0
+1141705,None,None,114,121,122,15~44,0,Bong,118,NA,None,0,1,0
+1141710,1141709,91,100,105,106,15~44,0,Bong,104,NA,None,0,1,0
+1141712,None,None,103,110,112,0~14,0,Bong,105,NA,None,0,1,0
+1141731,None,None,None,110,111,15~44,0,Bong,None,NA,None,0,1,0
+1141735,None,None,None,106,109,15~44,0,Bong,99,NA,NA,0,1,0
+1141802,None,None,101,NA,NA,15~44,0,Bong,104,NA,None,0,NA,0
+1141804,None,None,113,122,125,0~14,0,Bong,None,NA,None,0,1,0
+1141805,None,None,107,119,122,15~44,0,Bong,None,NA,NA,0,1,0
+1141806,None,None,111,124,126,0~14,0,Bong,118,NA,NA,0,1,0
+1141947,None,None,None,NA,NA,45~100,0,Bong,None,NA,107,0,NA,0
+1141950,1141953,85,93,NA,NA,15~44,0,Bong,96,NA,None,0,NA,0
+1141952,None,None,72,NA,NA,45~100,0,Bong,None,NA,88,0,NA,0
+1141953,None,None,83,90,93,15~44,0,Bong,87,NA,NA,0,1,0
+1141954,None,None,83,92,93,15~44,0,Bong,None,NA,NA,0,1,0
+1141955,None,None,None,NA,NA,15~44,0,Bong,95,NA,None,0,NA,0
+1141956,None,None,91,NA,NA,0~14,0,Bong,None,NA,115,0,NA,0
+1144882,1330736,102,None,123,126,15~44,0,Bong,119,NA,None,0,1,0
+1144883,None,None,112,124,127,15~44,0,Bong,116,NA,None,0,1,0
+1169969,None,None,None,136,139,15~44,0,Bong,129,NA,None,0,1,0
+1174966,None,None,124,NA,NA,45~100,0,Bong,124,NA,None,0,NA,0
+1174968,None,None,None,NA,NA,15~44,0,Bong,116,NA,None,0,NA,0
+1180469,None,None,None,126,127,0~14,0,Bong,121,NA,NA,0,1,0
+1183206,None,None,None,109,111,15~44,0,Bong,104,NA,NA,0,1,0
+1187644,None,None,117,123,124,15~44,0,Bong,121,NA,NA,0,1,0
+1193900,989060,118,131,138,139,0~14,0,Bong,136,NA,None,0,1,0
+1200450,None,None,None,NA,NA,15~44,0,Bong,117,NA,137,0,NA,0
+1201765,None,None,None,135,136,45~100,0,Bong,130,NA,None,0,1,0
+1203654,None,None,124,NA,NA,15~44,0,Bong,None,NA,None,0,NA,0
+1203818,None,None,106,123,126,15~44,0,Bong,113,NA,NA,0,1,0
+1246637,None,None,None,133,134,0~14,0,Bong,None,NA,None,0,1,0
+1252109,None,None,104,112,115,45~100,0,Bong,108,NA,None,0,1,0
+1252110,None,None,None,138,139,45~100,0,Bong,None,NA,NA,0,1,0
+1252111,1284958,87,None,119,122,15~44,0,Bong,109,NA,NA,0,1,0
+1252112,None,None,101,NA,NA,45~100,0,Bong,107,NA,121,0,NA,0
+1252115,None,None,None,105,108,15~44,0,Bong,None,NA,NA,0,1,0
+1252116,1284958,92,101,106,108,15~44,0,Bong,None,NA,None,0,1,0
+1252117,None,None,None,104,106,0~14,0,Bong,100,NA,NA,0,1,0
+1252118,None,None,103,NA,NA,0~14,0,Bong,None,NA,None,0,NA,0
+1260824,None,None,None,135,136,15~44,0,Bong,134,NA,NA,0,1,0
+1260825,1260973,116,None,136,137,15~44,0,Bong,130,NA,None,0,1,0
+1260973,1260997,102,None,128,131,15~44,0,Bong,None,NA,NA,0,1,0
+1260974,None,None,128,138,139,15~44,0,Bong,None,NA,None,0,1,0
+1260982,None,None,100,109,111,15~44,0,Bong,102,NA,NA,0,1,0
+1260993,None,None,None,97,99,15~44,0,Bong,None,NA,None,0,1,0
+1260995,None,None,111,122,123,0~14,0,Bong,None,NA,NA,0,1,0
+1260996,None,None,99,105,106,0~14,0,Bong,102,NA,None,0,1,0
+1261000,None,None,125,NA,NA,45~100,0,Bong,None,NA,None,0,NA,0
+1261002,None,None,None,119,121,15~44,0,Bong,None,NA,NA,0,1,0
+1280467,944809,82,93,100,103,15~44,0,Bong,95,NA,NA,0,1,0
+1284957,None,None,98,110,113,15~44,0,Bong,104,NA,NA,0,1,0
+1284959,None,None,71,87,88,15~44,0,Bong,75,NA,NA,0,1,0
+1284960,None,None,99,111,112,15~44,0,Bong,104,NA,None,0,1,0
+1306765,None,None,117,124,125,0~14,0,Bong,120,NA,NA,0,1,0
+1315996,None,None,125,133,134,15~44,0,Bong,None,NA,NA,0,1,0
+1319901,None,None,87,92,95,45~100,0,Bong,None,NA,None,0,1,0
+1319902,None,None,99,111,113,15~44,0,Bong,105,NA,None,0,1,0
+1319905,None,None,None,110,113,15~44,0,Bong,106,NA,None,0,1,0
+1330736,None,None,103,114,117,15~44,0,Bong,None,NA,None,0,1,0
+1360506,None,None,107,118,119,15~44,0,Bong,112,NA,NA,0,1,0
+1360507,None,None,108,117,118,15~44,0,Bong,114,NA,NA,0,1,0
+1371404,None,None,None,111,112,45~100,0,Bong,None,NA,None,0,1,0
+1371409,None,None,130,NA,NA,45~100,0,Bong,None,NA,None,0,NA,0
+1371430,None,None,118,129,131,15~44,0,Bong,None,NA,None,0,1,0
+1371432,1371454,111,118,NA,NA,0~14,0,Bong,121,NA,138,0,NA,0
+1371434,None,None,None,134,135,0~14,0,Bong,126,NA,None,0,1,0
+1371435,None,None,116,125,127,0~14,0,Bong,120,NA,None,0,1,0
+1371436,1371432,119,126,135,138,0~14,0,Bong,131,NA,None,0,1,0
+1371437,None,None,None,132,134,0~14,0,Bong,None,NA,NA,0,1,0
+1371456,None,None,109,121,122,15~44,0,Bong,114,NA,None,0,1,0
+1371517,1371432,122,127,NA,NA,45~100,0,Bong,None,NA,None,0,NA,0
+1371530,None,None,126,134,137,15~44,0,Bong,130,NA,NA,0,1,0
+1371573,None,None,111,117,119,45~100,0,Bong,114,NA,NA,0,1,0
+1371575,1284958,98,105,NA,NA,15~44,0,Bong,None,NA,129,0,NA,0
+1371577,None,None,None,121,122,15~44,0,Bong,None,NA,NA,0,1,0
+1371579,None,None,120,NA,NA,0~14,0,Bong,None,NA,133,0,NA,0
+1371580,None,None,115,122,123,15~44,0,Bong,119,NA,None,0,1,0
+1371582,None,None,97,114,116,0~14,0,Bong,105,NA,NA,0,1,0
+1371583,None,None,113,124,125,0~14,0,Bong,118,NA,None,0,1,0
+1371986,None,None,None,NA,NA,45~100,0,Bong,114,NA,131,0,NA,0
+1371987,None,None,110,119,122,15~44,0,Bong,None,NA,NA,0,1,0
+1371988,None,None,97,108,110,15~44,0,Bong,104,NA,None,0,1,0
+1392758,1682703,107,116,NA,NA,45~100,0,Gbarpolu,123,NA,133,0,NA,0
+1404279,None,None,62,72,75,15~44,0,Gbarpolu,67,NA,None,0,1,0
+1404498,None,None,88,100,101,45~100,0,Gbarpolu,93,NA,None,0,1,0
+1404499,None,None,84,90,91,15~44,0,Gbarpolu,86,NA,NA,0,1,0
+1404507,None,None,70,78,80,45~100,0,Gbarpolu,76,NA,NA,0,1,0
+1404612,None,None,None,84,86,15~44,0,Gbarpolu,79,NA,NA,0,1,0
+1404614,None,None,76,NA,NA,15~44,0,Gbarpolu,None,NA,95,0,NA,0
+1404615,1404279,67,78,87,89,15~44,0,Gbarpolu,None,NA,NA,0,1,0
+1404616,1404614,78,89,102,103,0~14,0,Gbarpolu,94,NA,None,0,1,0
+1405861,None,None,31,38,40,15~44,0,Gbarpolu,33,NA,NA,0,0,0
+1405874,1405875,4,11,19,22,15~44,0,Gbarpolu,None,NA,NA,0,0,0
+1405876,None,None,None,20,21,0~14,0,Gbarpolu,None,NA,None,0,0,0
+1405933,None,None,None,36,39,15~44,0,Gbarpolu,None,NA,None,0,0,0
+1405934,None,None,15,29,32,15~44,0,Gbarpolu,23,NA,None,0,0,0
+1405959,1405961,22,None,35,36,45~100,0,Gbarpolu,31,NA,None,0,0,0
+1405961,None,None,None,19,21,15~44,0,Gbarpolu,None,NA,None,0,0,0
+1405966,1405964,4,None,24,27,0~14,0,Gbarpolu,17,NA,None,0,0,0
+1405968,None,None,1,NA,NA,0~14,0,Gbarpolu,3,NA,15,0,NA,0
+1405970,None,None,1,NA,NA,0~14,0,Gbarpolu,2,NA,20,0,NA,0
+1406087,1405964,4,13,NA,NA,15~44,0,Gbarpolu,None,NA,None,0,NA,0
+1406088,1405966,28,38,48,49,15~44,0,Gbarpolu,41,NA,NA,0,0,0
+1406090,None,None,54,66,67,15~44,0,Gbarpolu,60,NA,None,0,0,0
+1406091,None,None,None,NA,NA,0~14,0,Gbarpolu,54,NA,68,0,NA,0
+1406964,None,None,108,115,118,15~44,0,Gbarpolu,113,NA,NA,0,1,0
+1408851,None,None,126,135,138,15~44,0,Gbarpolu,None,NA,NA,0,1,0
+1408852,None,None,122,NA,NA,15~44,0,Gbarpolu,None,NA,138,0,NA,0
+1408857,906911,116,125,134,135,0~14,0,Gbarpolu,131,NA,None,0,1,0
+1408858,906911,113,120,NA,NA,0~14,0,Gbarpolu,124,NA,135,0,NA,0
+1410375,None,None,93,NA,NA,45~100,0,Gbarpolu,96,NA,None,0,NA,0
+1416419,None,None,None,96,99,15~44,0,Gbarpolu,None,NA,NA,0,1,0
+1416686,None,None,101,112,113,15~44,0,Gbarpolu,104,NA,None,0,1,0
+1419986,None,None,120,125,127,45~100,0,Gbarpolu,None,NA,None,0,1,0
+1419991,None,None,None,134,135,15~44,0,Gbarpolu,131,NA,None,0,1,0
+1419998,None,None,128,138,139,15~44,0,Gbarpolu,132,NA,None,0,1,0
+1423930,1578953,106,120,124,127,15~44,0,Gbarpolu,123,NA,None,0,1,0
+1447547,1588536,111,None,133,136,0~14,0,Gbarpolu,None,NA,NA,0,1,0
+1458886,None,None,87,NA,NA,15~44,0,Gbarpolu,None,NA,None,0,NA,0
+1458887,None,None,84,94,95,45~100,0,Gbarpolu,89,NA,NA,0,1,0
+1458889,None,None,None,101,103,0~14,0,Gbarpolu,96,NA,None,0,1,0
+1458891,None,None,None,83,85,0~14,0,Gbarpolu,77,NA,NA,0,1,0
+1462253,1360507,116,130,138,139,0~14,0,Gbarpolu,130,NA,NA,0,1,0
+1463361,None,None,117,127,130,15~44,0,Gbarpolu,125,NA,None,0,1,0
+1463362,1463361,118,126,137,138,15~44,0,Gbarpolu,130,NA,NA,0,1,0
+1463364,None,None,None,133,134,15~44,0,Gbarpolu,130,NA,None,0,1,0
+1463365,1463361,119,None,138,139,0~14,0,Gbarpolu,132,NA,None,0,1,0
+1463366,None,None,None,136,137,0~14,0,Gbarpolu,132,NA,None,0,1,0
+1463535,None,None,126,135,137,15~44,0,Gbarpolu,None,NA,NA,0,1,0
+1464545,1252116,104,112,119,120,0~14,0,Gbarpolu,115,NA,NA,0,1,0
+1470378,None,None,None,116,118,15~44,0,Gbarpolu,107,NA,NA,0,1,0
+1470379,1632971,96,None,NA,NA,15~44,0,Gbarpolu,113,NA,None,0,NA,0
+1472869,None,None,100,111,112,15~44,0,Gbarpolu,104,NA,None,0,1,0
+1476071,None,None,89,93,96,15~44,0,Gbarpolu,None,NA,NA,0,1,0
+1476450,None,None,98,107,109,45~100,0,Gbarpolu,102,NA,None,0,1,0
+1479619,None,None,None,NA,NA,15~44,0,Gbarpolu,95,NA,106,0,NA,0
+1479621,None,None,None,99,101,0~14,0,Gbarpolu,97,NA,NA,0,1,0
+1492242,None,None,110,123,124,15~44,0,Gbarpolu,None,NA,None,0,1,0
+1497807,None,None,102,112,113,45~100,0,Grand Cape Mount,106,NA,NA,0,1,0
+1497809,None,None,None,99,102,0~14,0,Grand Cape Mount,94,NA,NA,0,1,0
+1497995,None,None,111,121,122,15~44,1,Grand Cape Mount,116,NA,NA,0,1,0
+1501418,None,None,124,131,132,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1501695,None,None,121,132,133,15~44,1,Grand Cape Mount,None,NA,NA,0,1,0
+1501772,None,None,None,100,101,15~44,1,Grand Cape Mount,None,NA,None,0,1,0
+1501773,None,None,None,111,113,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1501775,None,None,None,122,125,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1502103,None,None,None,116,117,0~14,0,Grand Cape Mount,114,NA,None,0,1,0
+1504246,None,None,None,76,79,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1504317,None,None,42,NA,NA,15~44,0,Grand Cape Mount,None,NA,None,0,NA,0
+1504321,None,None,None,NA,NA,15~44,0,Grand Cape Mount,51,NA,70,0,NA,0
+1504323,None,None,68,75,76,0~14,0,Grand Cape Mount,72,NA,None,0,1,0
+1504324,None,None,None,76,77,0~14,0,Grand Cape Mount,65,NA,NA,0,1,0
+1504325,None,None,None,61,62,0~14,0,Grand Cape Mount,55,NA,NA,0,0,0
+1504499,None,None,67,NA,NA,45~100,0,Grand Cape Mount,None,NA,85,0,NA,0
+1504928,1588119,100,110,114,115,45~100,1,Grand Cape Mount,111,NA,NA,0,1,0
+1504947,None,None,80,85,86,15~44,1,Grand Cape Mount,81,NA,NA,0,1,0
+1505575,None,None,None,120,121,15~44,0,Grand Cape Mount,118,NA,None,0,1,0
+1506095,None,None,None,129,130,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1507815,None,None,None,32,33,15~44,1,Grand Cape Mount,25,NA,None,0,0,0
+1510016,949966,101,111,123,124,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1510109,None,None,None,53,56,15~44,1,Grand Cape Mount,None,NA,NA,0,0,0
+1510949,1524028,112,None,128,129,15~44,0,Grand Cape Mount,126,NA,NA,0,1,0
+1514183,None,None,91,NA,NA,15~44,0,Grand Cape Mount,91,NA,107,0,NA,0
+1514184,None,None,76,86,88,15~44,0,Grand Cape Mount,82,NA,NA,0,1,0
+1514707,None,None,108,120,121,45~100,1,Grand Cape Mount,114,NA,NA,0,1,0
+1514798,None,None,42,47,48,15~44,0,Grand Cape Mount,None,NA,NA,0,0,0
+1514801,None,None,61,68,71,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1514802,None,None,None,65,66,0~14,0,Grand Cape Mount,53,NA,NA,0,0,0
+1514904,None,None,84,NA,NA,45~100,0,Grand Cape Mount,88,NA,98,0,NA,0
+1516410,None,None,None,NA,NA,15~44,0,Grand Cape Mount,79,NA,96,0,NA,0
+1516682,None,None,78,87,88,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1516687,None,None,None,121,124,15~44,0,Grand Cape Mount,117,NA,NA,0,1,0
+1517249,None,None,None,NA,NA,15~44,0,Grand Cape Mount,92,NA,None,0,NA,0
+1517563,1517566,109,117,127,128,45~100,0,Grand Cape Mount,None,NA,None,0,1,0
+1517564,None,None,121,133,134,15~44,1,Grand Cape Mount,127,NA,None,0,1,0
+1517566,None,None,107,NA,NA,15~44,0,Grand Cape Mount,115,NA,None,0,NA,0
+1517569,None,None,118,124,126,0~14,0,Grand Cape Mount,121,NA,None,0,1,0
+1517571,None,None,99,108,110,15~44,0,Grand Cape Mount,105,NA,None,0,1,0
+1518034,None,None,None,54,55,45~100,1,Grand Cape Mount,49,NA,None,0,0,0
+1518792,None,None,24,NA,NA,15~44,1,Grand Cape Mount,None,NA,None,0,NA,0
+1519412,None,None,None,112,114,45~100,1,Grand Cape Mount,106,NA,NA,0,1,0
+1521729,None,None,None,100,101,45~100,1,Grand Cape Mount,None,NA,NA,0,1,0
+1522653,None,None,None,75,78,15~44,0,Grand Cape Mount,69,NA,NA,0,1,0
+1522654,1534181,36,51,62,64,15~44,0,Grand Cape Mount,None,NA,None,0,0,0
+1524028,None,None,None,118,119,15~44,1,Grand Cape Mount,None,NA,NA,0,1,0
+1524030,None,None,121,NA,NA,0~14,0,Grand Cape Mount,128,NA,None,0,NA,0
+1524032,None,None,120,135,136,0~14,0,Grand Cape Mount,129,NA,NA,0,1,0
+1524726,1599121,80,None,99,100,45~100,1,Grand Cape Mount,93,NA,NA,0,1,0
+1525027,None,None,121,NA,NA,15~44,0,Grand Cape Mount,None,NA,None,0,NA,0
+1526780,None,None,None,130,133,15~44,0,Grand Cape Mount,118,NA,None,0,1,0
+1527232,None,None,20,27,28,15~44,0,Grand Cape Mount,None,NA,NA,0,0,0
+1529599,1688042,69,75,86,87,15~44,1,Grand Cape Mount,79,NA,None,0,1,0
+1530487,1545668,72,None,95,97,15~44,1,Grand Cape Mount,None,NA,NA,0,1,0
+1531656,None,None,110,119,122,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1531657,None,None,None,111,112,15~44,1,Grand Cape Mount,104,NA,NA,0,1,0
+1531658,None,None,125,133,135,0~14,0,Grand Cape Mount,130,NA,NA,0,1,0
+1531659,1531657,100,114,NA,NA,0~14,0,Grand Cape Mount,119,NA,135,0,NA,0
+1531660,None,None,121,128,131,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1533901,None,None,None,NA,NA,45~100,0,Grand Cape Mount,80,NA,90,0,NA,0
+1533902,None,None,84,94,97,45~100,0,Grand Cape Mount,88,NA,NA,0,1,0
+1533907,None,None,73,81,84,15~44,0,Grand Cape Mount,77,NA,None,0,1,0
+1534181,None,None,None,42,43,45~100,0,Grand Cape Mount,None,NA,NA,0,0,0
+1534183,None,None,30,39,40,0~14,0,Grand Cape Mount,33,NA,NA,0,0,0
+1534184,None,None,None,50,51,0~14,0,Grand Cape Mount,None,NA,NA,0,0,0
+1534186,None,None,None,NA,NA,0~14,0,Grand Cape Mount,42,NA,54,0,NA,0
+1534187,None,None,None,NA,NA,0~14,0,Grand Cape Mount,46,NA,None,0,NA,0
+1534335,None,None,None,125,128,45~100,0,Grand Cape Mount,123,NA,NA,0,1,0
+1534446,None,None,None,NA,NA,15~44,0,Grand Cape Mount,None,NA,None,0,NA,0
+1536086,None,None,97,NA,NA,15~44,1,Grand Cape Mount,101,NA,113,0,NA,0
+1536282,None,None,None,126,127,15~44,1,Grand Cape Mount,120,NA,None,0,1,0
+1537061,None,None,62,71,72,45~100,0,Grand Cape Mount,67,NA,None,0,1,0
+1537062,None,None,56,64,65,45~100,0,Grand Cape Mount,None,NA,None,0,0,0
+1537064,1537062,59,None,76,77,15~44,0,Grand Cape Mount,71,NA,NA,0,1,0
+1537423,1687765,87,96,103,104,45~100,1,Grand Cape Mount,None,NA,NA,0,1,0
+1538028,None,None,None,95,97,45~100,1,Grand Cape Mount,93,NA,NA,0,1,0
+1538141,None,None,73,NA,NA,45~100,0,Grand Cape Mount,77,NA,88,0,NA,0
+1538142,None,None,None,47,50,45~100,0,Grand Cape Mount,41,NA,None,0,0,0
+1538143,None,None,None,72,74,15~44,0,Grand Cape Mount,65,NA,NA,0,1,0
+1538145,None,None,53,NA,NA,15~44,0,Grand Cape Mount,54,NA,69,0,NA,0
+1539644,None,None,None,93,95,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1540276,None,None,None,45,47,15~44,0,Grand Cape Mount,None,NA,NA,0,0,0
+1540590,None,None,122,NA,NA,15~44,0,Grand Cape Mount,None,NA,None,0,NA,0
+1540591,None,None,103,116,119,45~100,0,Grand Cape Mount,106,NA,None,0,1,0
+1540592,1682789,101,113,NA,NA,0~14,0,Grand Cape Mount,None,NA,None,0,NA,0
+1540803,None,None,118,126,129,0~14,0,Grand Cape Mount,122,NA,None,0,1,0
+1545663,None,None,58,NA,NA,45~100,0,Grand Cape Mount,None,NA,77,0,NA,0
+1545664,1545804,50,57,62,63,0~14,0,Grand Cape Mount,59,NA,NA,0,0,0
+1545665,None,None,71,78,79,0~14,0,Grand Cape Mount,75,NA,None,0,1,0
+1545667,None,None,None,NA,NA,0~14,0,Grand Cape Mount,None,NA,34,0,NA,0
+1545668,1545807,56,66,73,74,15~44,0,Grand Cape Mount,68,NA,NA,0,1,0
+1545703,1545804,49,58,64,65,15~44,0,Grand Cape Mount,61,NA,NA,0,0,0
+1545705,None,None,None,69,71,15~44,0,Grand Cape Mount,67,NA,NA,0,1,0
+1545706,None,None,70,84,87,0~14,0,Grand Cape Mount,79,NA,NA,0,1,0
+1545707,None,None,None,47,49,0~14,0,Grand Cape Mount,None,NA,NA,0,0,0
+1545709,None,None,68,80,83,0~14,0,Grand Cape Mount,76,NA,NA,0,1,0
+1545797,None,None,19,27,28,45~100,0,Grand Cape Mount,None,NA,None,0,0,0
+1545798,None,None,None,24,25,45~100,0,Grand Cape Mount,19,NA,NA,0,0,0
+1545799,None,None,None,NA,NA,15~44,0,Grand Cape Mount,49,NA,None,0,NA,0
+1545800,None,None,None,46,47,15~44,0,Grand Cape Mount,43,NA,NA,0,0,0
+1545801,1545799,47,None,66,69,0~14,0,Grand Cape Mount,None,NA,NA,0,0,0
+1545802,1545804,49,55,67,70,0~14,0,Grand Cape Mount,None,NA,NA,0,0,0
+1545803,1567621,1,8,NA,NA,15~44,0,Grand Cape Mount,None,NA,29,0,NA,0
+1545804,1545797,29,35,46,49,0~14,0,Grand Cape Mount,37,NA,NA,0,0,0
+1545805,None,None,66,79,81,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1545807,None,None,None,74,77,0~14,0,Grand Cape Mount,64,NA,None,0,1,0
+1545859,None,None,None,89,92,15~44,0,Grand Cape Mount,86,NA,NA,0,1,0
+1545904,None,None,48,58,59,15~44,0,Grand Cape Mount,None,NA,NA,0,0,0
+1545905,None,None,None,89,90,15~44,0,Grand Cape Mount,80,NA,NA,0,1,0
+1550764,None,None,115,NA,NA,15~44,0,Grand Cape Mount,121,NA,None,0,NA,0
+1550765,1517566,113,122,127,129,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1551213,1533907,74,88,101,103,15~44,0,Grand Cape Mount,92,NA,NA,0,1,0
+1551890,None,None,115,122,125,15~44,0,Grand Cape Mount,118,NA,NA,0,1,0
+1551891,None,None,124,135,137,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1551893,None,None,111,119,121,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1551898,None,None,127,136,137,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1551929,None,None,106,116,118,45~100,0,Grand Cape Mount,112,NA,NA,0,1,0
+1552494,None,None,None,107,108,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1552515,None,None,None,NA,NA,15~44,0,Grand Cape Mount,None,NA,124,0,NA,0
+1552603,1552607,95,None,113,115,45~100,0,Grand Cape Mount,109,NA,NA,0,1,0
+1552604,1552607,93,104,NA,NA,45~100,0,Grand Cape Mount,None,NA,131,0,NA,0
+1552607,1458891,81,93,NA,NA,0~14,0,Grand Cape Mount,96,NA,107,0,NA,0
+1552608,1552607,93,107,NA,NA,45~100,0,Grand Cape Mount,109,NA,124,0,NA,0
+1552624,1552647,112,121,136,137,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1552625,None,None,None,125,128,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1552626,None,None,123,134,135,0~14,0,Grand Cape Mount,129,NA,NA,0,1,0
+1552645,1552607,96,111,119,120,45~100,0,Grand Cape Mount,112,NA,None,0,1,0
+1552646,1552607,93,99,NA,NA,45~100,0,Grand Cape Mount,103,NA,116,0,NA,0
+1552648,None,None,117,121,122,15~44,0,Grand Cape Mount,119,NA,NA,0,1,0
+1552649,1552605,113,123,133,136,0~14,0,Grand Cape Mount,125,NA,None,0,1,0
+1552651,None,None,125,NA,NA,0~14,0,Grand Cape Mount,128,NA,None,0,NA,0
+1552694,None,None,119,129,130,15~44,0,Grand Cape Mount,122,NA,None,0,1,0
+1552699,None,None,125,129,132,45~100,0,Grand Cape Mount,125,NA,None,0,1,0
+1552778,None,None,128,136,139,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1552779,None,None,None,124,125,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1556958,None,None,None,86,87,15~44,0,Grand Cape Mount,83,NA,None,0,1,0
+1559334,None,None,None,130,132,15~44,0,Grand Cape Mount,128,NA,NA,0,1,0
+1559335,1624975,100,None,121,123,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1559533,None,None,119,NA,NA,45~100,0,Grand Cape Mount,None,NA,136,0,NA,0
+1559536,None,None,115,126,127,15~44,0,Grand Cape Mount,122,NA,None,0,1,0
+1560884,None,None,95,108,109,15~44,0,Grand Cape Mount,99,NA,NA,0,1,0
+1562563,None,None,88,NA,NA,0~14,0,Grand Cape Mount,92,NA,None,0,NA,0
+1562564,None,None,83,97,99,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1563867,None,None,104,113,114,15~44,0,Grand Cape Mount,108,NA,NA,0,1,0
+1563868,None,None,None,NA,NA,15~44,0,Grand Cape Mount,111,NA,130,0,NA,0
+1563871,None,None,None,NA,NA,15~44,0,Grand Cape Mount,116,NA,None,0,NA,0
+1564495,None,None,None,120,121,15~44,0,Grand Cape Mount,118,NA,NA,0,1,0
+1564507,None,None,103,NA,NA,45~100,0,Grand Cape Mount,None,NA,117,0,NA,0
+1564515,None,None,None,129,131,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1567249,None,None,90,97,99,15~44,0,Grand Cape Mount,91,NA,NA,0,1,0
+1567250,1567249,90,None,112,114,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1567415,None,None,None,NA,NA,15~44,0,Grand Cape Mount,61,NA,None,0,NA,0
+1567416,1567623,17,None,38,39,15~44,0,Grand Cape Mount,33,NA,None,0,0,0
+1567419,None,None,57,NA,NA,0~14,0,Grand Cape Mount,None,NA,75,0,NA,0
+1567598,None,None,7,NA,NA,45~100,0,Grand Cape Mount,None,NA,None,0,NA,0
+1567622,None,None,3,16,17,15~44,0,Grand Cape Mount,6,NA,None,0,0,0
+1567626,None,None,1,9,11,0~14,0,Grand Cape Mount,4,NA,NA,0,0,0
+1567811,None,None,None,26,28,45~100,0,Grand Cape Mount,None,NA,NA,0,0,0
+1572988,None,None,126,138,139,45~100,0,Grand Cape Mount,None,NA,None,0,1,0
+1573556,None,None,73,83,84,45~100,0,Grand Cape Mount,75,NA,None,0,1,0
+1573557,1687839,63,75,87,88,45~100,0,Grand Cape Mount,79,NA,NA,0,1,0
+1573558,1687839,61,68,80,83,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1573560,None,None,70,77,80,0~14,0,Grand Cape Mount,76,NA,NA,0,1,0
+1573626,None,None,75,95,96,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1574912,None,None,None,54,56,15~44,0,Grand Cape Mount,None,NA,None,0,0,0
+1575843,None,None,113,124,125,45~100,0,Grand Cape Mount,114,NA,None,0,1,0
+1575844,1575843,113,124,129,130,45~100,0,Grand Cape Mount,None,NA,None,0,1,0
+1575968,None,None,None,132,133,45~100,0,Grand Cape Mount,128,NA,None,0,1,0
+1577121,None,None,None,103,104,15~44,0,Grand Cape Mount,94,NA,NA,0,1,0
+1577122,None,None,97,106,107,0~14,0,Grand Cape Mount,100,NA,NA,0,1,0
+1577714,None,None,99,107,108,15~44,0,Grand Cape Mount,104,NA,NA,0,1,0
+1578952,None,None,None,114,117,15~44,0,Grand Cape Mount,111,NA,NA,0,1,0
+1578953,None,None,105,119,120,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1578954,1578953,108,None,123,125,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1578955,None,None,108,116,117,0~14,0,Grand Cape Mount,109,NA,NA,0,1,0
+1580042,None,None,93,104,106,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1580936,None,None,None,97,100,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1580938,1580935,92,None,112,113,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1581562,None,None,110,118,119,15~44,0,Grand Cape Mount,113,NA,NA,0,1,0
+1581563,None,None,96,103,106,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1581565,None,None,102,109,111,15~44,0,Grand Cape Mount,107,NA,NA,0,1,0
+1581566,None,None,118,131,134,0~14,0,Grand Cape Mount,124,NA,NA,0,1,0
+1586055,None,None,104,NA,NA,15~44,0,Grand Cape Mount,106,NA,None,0,NA,0
+1586056,1586055,107,120,124,126,15~44,0,Grand Cape Mount,122,NA,NA,0,1,0
+1587980,1587981,13,25,32,33,15~44,0,Grand Cape Mount,28,NA,NA,0,0,0
+1587981,None,None,12,20,21,15~44,0,Grand Cape Mount,16,NA,NA,0,0,0
+1587982,None,None,29,38,39,15~44,0,Grand Cape Mount,None,NA,None,0,0,0
+1587987,None,None,1,14,16,0~14,0,Grand Cape Mount,7,NA,NA,0,0,0
+1587988,None,None,12,19,22,0~14,0,Grand Cape Mount,None,NA,NA,0,0,0
+1588021,None,None,None,NA,NA,15~44,0,Grand Cape Mount,None,NA,None,0,NA,0
+1588031,None,None,107,118,120,45~100,0,Grand Cape Mount,None,NA,None,0,1,0
+1588032,None,None,120,129,132,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1588033,1588031,111,122,131,133,15~44,0,Grand Cape Mount,127,NA,None,0,1,0
+1588119,None,None,89,104,105,15~44,0,Grand Cape Mount,95,NA,None,0,1,0
+1588120,None,None,90,99,100,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1588121,None,None,76,90,93,15~44,0,Grand Cape Mount,79,NA,None,0,1,0
+1588122,None,None,None,92,93,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1588536,1682789,99,109,NA,NA,45~100,0,Grand Cape Mount,None,NA,123,0,NA,0
+1588537,None,None,None,NA,NA,15~44,0,Grand Cape Mount,109,NA,121,0,NA,0
+1588538,None,None,None,126,127,0~14,0,Grand Cape Mount,122,NA,NA,0,1,0
+1588539,None,None,None,135,137,45~100,0,Grand Cape Mount,128,NA,NA,0,1,0
+1588634,None,None,None,121,122,45~100,0,Grand Cape Mount,116,NA,NA,0,1,0
+1588635,1588638,90,102,112,115,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1588636,None,None,98,102,105,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1588637,None,None,111,120,122,15~44,0,Grand Cape Mount,115,NA,None,0,1,0
+1590207,None,None,None,NA,NA,15~44,0,Grand Cape Mount,48,NA,None,0,NA,0
+1590650,None,None,None,133,135,45~100,0,Grand Cape Mount,128,NA,None,0,1,0
+1591508,None,None,None,NA,NA,0~14,0,Grand Cape Mount,130,NA,None,0,NA,0
+1594418,None,None,108,115,116,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1594420,None,None,101,NA,NA,15~44,0,Grand Cape Mount,102,NA,118,0,NA,0
+1594579,None,None,None,137,138,0~14,0,Grand Cape Mount,136,NA,None,0,1,0
+1594856,None,None,None,80,82,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1594873,1594875,122,131,137,139,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1594875,None,None,121,127,129,0~14,0,Grand Cape Mount,125,NA,NA,0,1,0
+1595329,None,None,102,111,112,45~100,0,Grand Cape Mount,None,NA,None,0,1,0
+1596858,None,None,None,100,101,45~100,0,Grand Cape Mount,96,NA,NA,0,1,0
+1597766,None,None,104,115,116,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1599110,1599186,106,115,NA,NA,15~44,0,Grand Cape Mount,None,NA,139,0,NA,0
+1599121,None,None,71,82,83,45~100,0,Grand Cape Mount,78,NA,None,0,1,0
+1599122,None,None,80,94,95,15~44,0,Grand Cape Mount,86,NA,NA,0,1,0
+1599123,1599121,74,81,92,93,0~14,0,Grand Cape Mount,88,NA,NA,0,1,0
+1599124,None,None,None,95,98,0~14,0,Grand Cape Mount,90,NA,NA,0,1,0
+1599125,None,None,86,100,102,0~14,0,Grand Cape Mount,89,NA,None,0,1,0
+1599126,None,None,86,NA,NA,0~14,0,Grand Cape Mount,91,NA,101,0,NA,0
+1599127,None,None,82,94,96,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1599156,None,None,None,126,128,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1599162,None,None,80,94,95,45~100,0,Grand Cape Mount,87,NA,NA,0,1,0
+1599167,None,None,95,106,107,0~14,0,Grand Cape Mount,100,NA,None,0,1,0
+1599179,None,None,80,89,90,45~100,0,Grand Cape Mount,83,NA,NA,0,1,0
+1599181,None,None,None,86,89,15~44,0,Grand Cape Mount,81,NA,None,0,1,0
+1599183,None,None,None,NA,NA,0~14,0,Grand Cape Mount,101,NA,121,0,NA,0
+1599188,None,None,114,NA,NA,0~14,0,Grand Cape Mount,117,NA,131,0,NA,0
+1599189,None,None,None,NA,NA,15~44,0,Grand Cape Mount,51,NA,63,0,NA,0
+1599190,1599121,77,None,95,96,15~44,0,Grand Cape Mount,91,NA,None,0,1,0
+1599200,None,None,None,97,98,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1599550,None,None,116,NA,NA,15~44,0,Grand Cape Mount,None,NA,137,0,NA,0
+1603007,None,None,None,114,115,45~100,0,Grand Cape Mount,106,NA,NA,0,1,0
+1603071,None,None,None,129,132,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1603128,None,None,None,120,121,15~44,0,Grand Cape Mount,113,NA,NA,0,1,0
+1609769,None,None,None,NA,NA,15~44,0,Grand Cape Mount,108,NA,None,0,NA,0
+1609771,None,None,128,137,139,0~14,0,Grand Cape Mount,131,NA,NA,0,1,0
+1615142,None,None,None,92,93,15~44,0,Grand Cape Mount,86,NA,None,0,1,0
+1615881,None,None,None,130,132,45~100,0,Grand Cape Mount,128,NA,None,0,1,0
+1619007,None,None,132,137,139,45~100,0,Grand Cape Mount,136,NA,None,0,1,0
+1619013,None,None,120,129,131,0~14,0,Grand Cape Mount,124,NA,NA,0,1,0
+1624975,None,None,99,NA,NA,15~44,0,Grand Cape Mount,106,NA,115,0,NA,0
+1628336,None,None,79,87,88,45~100,0,Grand Cape Mount,None,NA,None,0,1,0
+1628898,None,None,112,118,120,15~44,0,Grand Cape Mount,115,NA,None,0,1,0
+1629516,1629547,70,82,99,100,45~100,0,Grand Cape Mount,90,NA,NA,0,1,0
+1629517,None,None,93,NA,NA,15~44,0,Grand Cape Mount,98,NA,109,0,NA,0
+1629545,None,None,74,82,83,45~100,0,Grand Cape Mount,76,NA,NA,0,1,0
+1629546,1629547,67,74,NA,NA,45~100,0,Grand Cape Mount,76,NA,None,0,NA,0
+1629548,None,None,None,97,98,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1629551,1629547,69,None,96,99,45~100,0,Grand Cape Mount,82,NA,NA,0,1,0
+1629841,None,None,None,NA,NA,15~44,0,Grand Cape Mount,125,NA,None,0,NA,0
+1629881,None,None,117,128,131,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1629899,None,None,94,102,105,0~14,0,Grand Cape Mount,98,NA,None,0,1,0
+1629901,1629920,74,87,99,102,0~14,0,Grand Cape Mount,93,NA,NA,0,1,0
+1629916,None,None,None,94,95,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1629917,1629920,74,81,NA,NA,15~44,0,Grand Cape Mount,86,NA,None,0,NA,0
+1629918,None,None,92,102,103,0~14,0,Grand Cape Mount,97,NA,NA,0,1,0
+1629919,None,None,82,92,94,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1629920,None,None,None,81,82,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1629921,None,None,75,NA,NA,0~14,0,Grand Cape Mount,78,NA,None,0,NA,0
+1630027,1630029,94,104,115,116,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1630029,1629917,81,91,101,102,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1630030,None,None,None,123,125,0~14,0,Grand Cape Mount,122,NA,None,0,1,0
+1630031,None,None,103,NA,NA,15~44,0,Grand Cape Mount,105,NA,122,0,NA,0
+1630037,None,None,None,136,137,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1630044,1629921,77,None,101,104,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1630045,None,None,83,90,92,15~44,0,Grand Cape Mount,85,NA,NA,0,1,0
+1630047,None,None,85,92,95,0~14,0,Grand Cape Mount,87,NA,NA,0,1,0
+1630049,None,None,100,108,109,15~44,0,Grand Cape Mount,102,NA,NA,0,1,0
+1632445,None,None,119,127,128,45~100,0,Grand Cape Mount,125,NA,None,0,1,0
+1632447,1560884,97,108,125,126,45~100,0,Grand Cape Mount,111,NA,None,0,1,0
+1632645,1529916,123,127,136,137,45~100,0,Grand Cape Mount,None,NA,None,0,1,0
+1632693,None,None,116,130,131,0~14,0,Grand Cape Mount,120,NA,NA,0,1,0
+1632969,None,None,106,115,116,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1632971,None,None,95,103,104,0~14,0,Grand Cape Mount,101,NA,NA,0,1,0
+1632972,1632971,97,107,122,123,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1632988,None,None,120,128,129,15~44,0,Grand Cape Mount,122,NA,None,0,1,0
+1632991,1632971,100,None,124,127,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1633121,None,None,105,NA,NA,15~44,0,Grand Cape Mount,108,NA,None,0,NA,0
+1633123,1632971,98,None,120,123,0~14,0,Grand Cape Mount,112,NA,None,0,1,0
+1633749,1634136,115,None,136,137,0~14,0,Grand Cape Mount,131,NA,NA,0,1,0
+1633822,1634030,115,122,134,136,45~100,0,Grand Cape Mount,129,NA,NA,0,1,0
+1633834,1634031,76,None,96,99,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1634024,1634031,76,89,NA,NA,15~44,0,Grand Cape Mount,None,NA,108,0,NA,0
+1634025,None,None,83,94,97,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1634026,None,None,None,95,97,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1634029,None,None,91,NA,NA,0~14,0,Grand Cape Mount,97,NA,109,0,NA,0
+1634030,1634032,106,112,124,127,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1634031,None,None,74,86,87,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1634032,None,None,103,114,116,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1634139,None,None,121,135,136,0~14,0,Grand Cape Mount,130,NA,None,0,1,0
+1636739,None,None,None,102,105,0~14,0,Grand Cape Mount,95,NA,NA,0,1,0
+1638301,None,None,None,91,92,15~44,0,Grand Cape Mount,79,NA,NA,0,1,0
+1638303,None,None,78,85,86,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1638306,None,None,79,NA,NA,0~14,0,Grand Cape Mount,82,NA,92,0,NA,0
+1638372,1406088,42,57,63,64,15~44,0,Grand Cape Mount,None,NA,None,0,0,0
+1638375,None,None,None,80,83,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1638710,None,None,67,79,82,15~44,0,Grand Cape Mount,72,NA,None,0,1,0
+1638940,None,None,84,92,94,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1640827,1537063,55,None,71,72,45~100,0,Grand Cape Mount,64,NA,NA,0,1,0
+1640877,None,None,82,92,94,45~100,0,Grand Cape Mount,86,NA,NA,0,1,0
+1640878,None,None,99,110,111,15~44,0,Grand Cape Mount,104,NA,NA,0,1,0
+1641195,None,None,94,106,107,15~44,0,Grand Cape Mount,98,NA,NA,0,1,0
+1646487,None,None,92,102,105,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1646488,None,None,None,97,98,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1646492,1646495,116,None,136,137,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1646495,1634032,106,None,NA,NA,15~44,0,Grand Cape Mount,118,NA,136,0,NA,0
+1653188,None,None,111,NA,NA,45~100,0,Grand Cape Mount,116,NA,129,0,NA,0
+1661036,None,None,114,126,127,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1663097,None,None,80,87,88,15~44,0,Grand Cape Mount,84,NA,NA,0,1,0
+1663854,None,None,95,103,105,0~14,0,Grand Cape Mount,100,NA,None,0,1,0
+1663855,None,None,None,104,107,0~14,0,Grand Cape Mount,100,NA,None,0,1,0
+1663856,None,None,None,131,132,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1663859,None,None,74,86,88,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1664211,None,None,None,93,94,15~44,0,Grand Cape Mount,85,NA,NA,0,1,0
+1664338,None,None,80,NA,NA,0~14,0,Grand Cape Mount,86,NA,None,0,NA,0
+1665505,None,None,125,NA,NA,15~44,0,Grand Cape Mount,131,NA,None,0,NA,0
+1666224,None,None,None,136,137,15~44,0,Grand Cape Mount,130,NA,None,0,1,0
+1666228,None,None,122,NA,NA,0~14,0,Grand Cape Mount,127,NA,None,0,NA,0
+1667621,1667620,123,129,138,139,0~14,0,Grand Cape Mount,134,NA,NA,0,1,0
+1667622,None,None,117,130,131,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1667626,None,None,96,105,107,15~44,0,Grand Cape Mount,101,NA,NA,0,1,0
+1669068,None,None,117,NA,NA,0~14,0,Grand Cape Mount,119,NA,None,0,NA,0
+1670738,None,None,115,NA,NA,15~44,0,Grand Cape Mount,121,NA,130,0,NA,0
+1670739,None,None,None,124,127,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1673526,None,None,122,128,131,45~100,0,Grand Cape Mount,127,NA,None,0,1,0
+1673983,None,None,72,84,86,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1673986,None,None,48,55,58,45~100,0,Grand Cape Mount,None,NA,NA,0,0,0
+1674676,None,None,122,131,132,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1674924,1674923,103,114,126,127,15~44,0,Grand Cape Mount,121,NA,None,0,1,0
+1674980,None,None,None,104,105,15~44,0,Grand Cape Mount,98,NA,NA,0,1,0
+1674981,None,None,46,54,55,15~44,0,Grand Cape Mount,49,NA,NA,0,0,0
+1674982,None,None,83,97,100,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1674985,1674979,81,86,NA,NA,0~14,0,Grand Cape Mount,None,NA,None,0,NA,0
+1674987,None,None,None,98,99,0~14,0,Grand Cape Mount,96,NA,NA,0,1,0
+1675099,None,None,None,69,71,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1677069,None,None,None,100,101,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1677070,None,None,95,105,106,15~44,0,Grand Cape Mount,98,NA,None,0,1,0
+1677072,None,None,87,104,105,0~14,0,Grand Cape Mount,91,NA,None,0,1,0
+1677110,None,None,103,107,109,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1677111,None,None,101,115,116,0~14,0,Grand Cape Mount,109,NA,NA,0,1,0
+1677112,None,None,87,96,99,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1678461,None,None,77,85,87,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1679829,None,None,120,131,134,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1679953,None,None,119,126,129,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1681082,1681259,105,None,NA,NA,45~100,0,Grand Cape Mount,115,NA,129,0,NA,0
+1681090,None,None,115,122,124,15~44,0,Grand Cape Mount,117,NA,NA,0,1,0
+1681110,None,None,None,118,120,45~100,0,Grand Cape Mount,None,NA,None,0,1,0
+1681112,1681229,95,None,115,116,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1681113,None,None,None,NA,NA,0~14,0,Grand Cape Mount,126,NA,None,0,NA,0
+1681135,None,None,104,117,118,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1681167,None,None,105,113,114,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1681168,None,None,110,118,119,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1681169,None,None,None,102,104,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1681170,None,None,106,113,114,15~44,0,Grand Cape Mount,109,NA,None,0,1,0
+1681171,None,None,None,111,112,0~14,0,Grand Cape Mount,107,NA,NA,0,1,0
+1681227,None,None,None,92,93,15~44,0,Grand Cape Mount,89,NA,NA,0,1,0
+1681228,None,None,96,112,114,0~14,0,Grand Cape Mount,100,NA,NA,0,1,0
+1681229,None,None,93,100,102,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1681230,None,None,104,NA,NA,0~14,0,Grand Cape Mount,None,NA,119,0,NA,0
+1681231,1681232,97,None,110,111,45~100,0,Grand Cape Mount,None,NA,None,0,1,0
+1681232,1681226,87,None,103,106,45~100,0,Grand Cape Mount,100,NA,None,0,1,0
+1681233,None,None,None,NA,NA,15~44,0,Grand Cape Mount,None,NA,None,0,NA,0
+1681257,None,None,None,121,123,15~44,0,Grand Cape Mount,117,NA,NA,0,1,0
+1681258,None,None,116,126,128,45~100,0,Grand Cape Mount,122,NA,NA,0,1,0
+1681259,None,None,104,115,117,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1681260,None,None,123,NA,NA,0~14,0,Grand Cape Mount,None,NA,None,0,NA,0
+1681261,None,None,107,118,120,0~14,0,Grand Cape Mount,111,NA,NA,0,1,0
+1681531,None,None,None,132,133,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1682707,None,None,117,127,129,0~14,0,Grand Cape Mount,122,NA,None,0,1,0
+1682709,None,None,None,124,127,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1682754,None,None,117,128,130,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1682789,None,None,None,103,106,15~44,0,Grand Cape Mount,99,NA,NA,0,1,0
+1682790,1682908,86,None,103,106,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1682791,None,None,None,117,119,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1682792,None,None,None,116,118,0~14,0,Grand Cape Mount,108,NA,None,0,1,0
+1682886,None,None,None,118,119,45~100,0,Grand Cape Mount,113,NA,None,0,1,0
+1682890,None,None,110,120,123,15~44,0,Grand Cape Mount,114,NA,None,0,1,0
+1682891,None,None,98,112,115,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1682892,None,None,98,114,115,15~44,0,Grand Cape Mount,103,NA,NA,0,1,0
+1682893,None,None,120,131,134,15~44,0,Grand Cape Mount,127,NA,NA,0,1,0
+1682897,None,None,None,103,104,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1682898,None,None,None,114,116,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1682899,None,None,None,105,107,0~14,0,Grand Cape Mount,102,NA,NA,0,1,0
+1682900,None,None,96,104,106,0~14,0,Grand Cape Mount,100,NA,NA,0,1,0
+1682903,None,None,113,125,126,0~14,0,Grand Cape Mount,116,NA,NA,0,1,0
+1682906,None,None,None,103,106,15~44,0,Grand Cape Mount,101,NA,NA,0,1,0
+1682907,None,None,96,NA,NA,15~44,0,Grand Cape Mount,None,NA,None,0,NA,0
+1682998,None,None,100,NA,NA,45~100,0,Grand Cape Mount,None,NA,117,0,NA,0
+1684859,None,None,98,NA,NA,0~14,0,Grand Cape Mount,108,NA,123,0,NA,0
+1687235,None,None,73,83,85,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1687237,None,None,63,74,76,45~100,0,Grand Cape Mount,68,NA,NA,0,1,0
+1687244,None,None,43,52,55,15~44,0,Grand Cape Mount,46,NA,NA,0,0,0
+1687245,None,None,31,43,44,45~100,0,Grand Cape Mount,40,NA,NA,0,0,0
+1687247,941445,16,28,39,42,0~14,0,Grand Cape Mount,None,NA,None,0,0,0
+1687248,None,None,None,52,54,0~14,0,Grand Cape Mount,48,NA,NA,0,0,0
+1687249,1687250,55,62,72,73,45~100,0,Grand Cape Mount,66,NA,NA,0,1,0
+1687250,None,None,55,NA,NA,45~100,0,Grand Cape Mount,None,NA,76,0,NA,0
+1687295,1687246,40,52,60,63,45~100,0,Grand Cape Mount,57,NA,None,0,0,0
+1687297,1687246,39,50,56,58,45~100,0,Grand Cape Mount,None,NA,None,0,0,0
+1687298,None,None,55,NA,NA,15~44,0,Grand Cape Mount,59,NA,74,0,NA,0
+1687301,None,None,None,52,54,0~14,0,Grand Cape Mount,None,NA,None,0,0,0
+1687303,None,None,None,91,92,45~100,0,Grand Cape Mount,86,NA,NA,0,1,0
+1687310,None,None,62,67,70,45~100,0,Grand Cape Mount,None,NA,None,0,0,0
+1687331,None,None,60,71,74,15~44,0,Grand Cape Mount,64,NA,NA,0,1,0
+1687362,None,None,None,128,131,15~44,0,Grand Cape Mount,123,NA,None,0,1,0
+1687363,1682886,112,124,131,132,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1687364,None,None,None,120,123,15~44,0,Grand Cape Mount,113,NA,NA,0,1,0
+1687365,None,None,None,105,108,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1687366,None,None,None,NA,NA,15~44,0,Grand Cape Mount,None,NA,113,0,NA,0
+1687372,None,None,123,133,136,0~14,0,Grand Cape Mount,129,NA,None,0,1,0
+1687670,None,None,111,123,124,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1687677,None,None,98,105,106,45~100,0,Grand Cape Mount,101,NA,NA,0,1,0
+1687736,1687764,89,None,108,111,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1687746,None,None,95,102,103,15~44,0,Grand Cape Mount,98,NA,NA,0,1,0
+1687763,None,None,96,107,108,45~100,0,Grand Cape Mount,None,NA,None,0,1,0
+1687764,1687765,78,None,95,96,45~100,0,Grand Cape Mount,89,NA,None,0,1,0
+1687765,None,None,78,88,90,0~14,0,Grand Cape Mount,None,NA,None,0,1,0
+1687837,None,None,None,74,75,45~100,0,Grand Cape Mount,None,NA,NA,0,1,0
+1687840,None,None,None,78,79,0~14,0,Grand Cape Mount,75,NA,None,0,1,0
+1687841,None,None,68,78,80,0~14,0,Grand Cape Mount,72,NA,NA,0,1,0
+1688041,None,None,74,86,87,15~44,0,Grand Cape Mount,None,NA,NA,0,1,0
+1688045,None,None,72,81,83,0~14,0,Grand Cape Mount,74,NA,NA,0,1,0
+1688046,None,None,None,79,80,15~44,0,Grand Cape Mount,None,NA,None,0,1,0
+1688047,None,None,None,NA,NA,45~100,0,Grand Cape Mount,None,NA,96,0,NA,0
+1688928,None,None,None,85,86,0~14,0,Grand Cape Mount,79,NA,None,0,1,0
+1689339,None,None,None,NA,NA,45~100,0,Grand Cape Mount,None,NA,84,0,NA,0
+1689340,None,None,46,49,52,15~44,0,Grand Cape Mount,47,NA,NA,0,0,0
+1689341,None,None,None,NA,NA,0~14,0,Grand Cape Mount,79,NA,None,0,NA,0
+1689342,None,None,65,76,77,0~14,0,Grand Cape Mount,None,NA,NA,0,1,0
+1690391,None,None,76,86,88,15~44,0,Grand Cape Mount,77,NA,NA,0,1,0
+1692808,None,None,124,128,129,45~100,0,Grand Cape Mount,126,NA,None,0,1,0
+1776201,None,None,123,136,139,45~100,0,Grand Bassa,130,NA,None,0,1,0
+1776208,None,None,126,136,138,15~44,0,Grand Bassa,130,NA,NA,0,1,0
+1785174,None,None,118,129,130,45~100,0,Grand Bassa,None,NA,NA,0,1,0
+1802943,2654744,92,104,110,113,45~100,0,Grand Bassa,105,NA,NA,0,1,0
+1862699,None,None,128,134,135,45~100,0,Grand Bassa,131,NA,NA,0,1,0
+2229163,2229164,113,121,129,132,15~44,0,Lofa,123,NA,NA,0,1,0
+2229164,None,None,113,120,123,0~14,0,Lofa,117,NA,NA,0,1,0
+2279897,1404279,71,None,92,93,15~44,0,Lofa,83,NA,NA,0,1,0
+2347192,None,None,101,NA,NA,0~14,0,Lofa,106,NA,130,0,NA,0
+2347253,None,None,104,117,118,0~14,0,Lofa,112,NA,NA,0,1,0
+2360699,None,None,101,109,112,15~44,0,Lofa,None,NA,NA,0,1,0
+2416124,2416127,122,129,138,139,0~14,0,Lofa,133,NA,NA,0,1,0
+2416127,2663555,109,121,127,128,0~14,0,Lofa,123,NA,NA,0,1,0
+2503495,1682908,95,105,116,119,45~100,0,Lofa,None,NA,None,0,1,0
+2503496,2503495,111,118,125,126,45~100,0,Lofa,119,NA,NA,0,1,0
+2503497,2503495,110,None,127,128,15~44,0,Lofa,None,NA,NA,0,1,0
+2503498,None,None,None,NA,NA,45~100,0,Lofa,119,NA,None,0,NA,0
+2503740,None,None,None,130,131,15~44,0,Lofa,122,NA,None,0,1,0
+2503755,2503495,109,None,128,129,0~14,0,Lofa,None,NA,NA,0,1,0
+2505751,None,None,None,131,132,45~100,0,Margibi,None,NA,NA,0,1,0
+2510198,None,None,None,134,136,15~44,0,Margibi,124,NA,None,0,1,0
+2510199,None,None,122,130,133,45~100,0,Margibi,123,NA,NA,0,1,0
+2510204,None,None,None,125,126,0~14,0,Margibi,122,NA,None,0,1,0
+2515452,None,None,None,133,134,15~44,0,Margibi,None,NA,None,0,1,0
+2580165,1141712,106,114,121,122,0~14,0,Margibi,117,NA,NA,0,1,0
+2605875,2654873,116,None,135,136,0~14,0,Margibi,None,NA,NA,0,1,0
+2609147,None,None,None,122,123,15~44,0,Margibi,117,NA,None,0,1,0
+2609151,None,None,115,121,124,15~44,0,Margibi,119,NA,NA,0,1,0
+2609193,None,None,None,NA,NA,15~44,0,Margibi,99,NA,118,0,NA,0
+2609194,None,None,None,108,110,15~44,0,Margibi,99,NA,NA,0,1,0
+2609195,2609194,97,106,119,120,0~14,0,Margibi,None,NA,NA,0,1,0
+2609197,None,None,103,114,115,0~14,0,Margibi,111,NA,NA,0,1,0
+2609221,None,None,113,124,126,45~100,0,Margibi,121,NA,NA,0,1,0
+2609222,None,None,107,116,117,45~100,0,Margibi,113,NA,None,0,1,0
+2609223,None,None,105,116,119,15~44,0,Margibi,110,NA,None,0,1,0
+2609227,None,None,102,113,115,0~14,0,Margibi,110,NA,None,0,1,0
+2609230,None,None,124,NA,NA,0~14,0,Margibi,None,NA,None,0,NA,0
+2609263,None,None,107,115,116,15~44,0,Margibi,110,NA,NA,0,1,0
+2609289,2609194,96,None,123,126,0~14,0,Margibi,114,NA,NA,0,1,0
+2610579,None,None,None,106,107,45~100,0,Margibi,104,NA,None,0,1,0
+2616241,None,None,None,133,135,15~44,0,Margibi,None,NA,None,0,1,0
+2616243,None,None,118,129,130,15~44,0,Margibi,None,NA,None,0,1,0
+2629598,None,None,112,NA,NA,15~44,0,Margibi,None,NA,None,0,NA,0
+2629599,None,None,None,128,130,0~14,0,Margibi,None,NA,None,0,1,0
+2629603,None,None,98,110,112,45~100,0,Margibi,104,NA,NA,0,1,0
+2637265,906885,109,None,132,133,15~44,0,Margibi,128,NA,None,0,1,0
+2637267,None,None,125,134,137,15~44,0,Margibi,127,NA,NA,0,1,0
+2637269,906885,102,None,121,124,0~14,0,Margibi,None,NA,NA,0,1,0
+2643836,None,None,123,133,135,15~44,0,Margibi,126,NA,NA,0,1,0
+2654738,None,None,120,131,132,45~100,0,Margibi,None,NA,None,0,1,0
+2654739,2654744,92,106,117,118,15~44,0,Margibi,109,NA,NA,0,1,0
+2654740,None,None,None,109,110,15~44,0,Margibi,107,NA,None,0,1,0
+2654744,None,None,None,NA,NA,15~44,0,Margibi,None,NA,107,0,NA,0
+2654869,None,None,108,118,119,45~100,0,Margibi,112,NA,NA,0,1,0
+2654871,None,None,131,137,139,0~14,0,Margibi,135,NA,NA,0,1,0
+2654873,None,None,116,132,134,45~100,0,Margibi,None,NA,NA,0,1,0
+2654934,None,None,92,99,100,15~44,0,Margibi,None,NA,NA,0,1,0
+2654937,None,None,119,127,129,0~14,0,Margibi,124,NA,NA,0,1,0
+2654938,1141679,93,102,115,116,0~14,0,Margibi,None,NA,NA,0,1,0
+2662943,None,None,127,136,139,45~100,0,Margibi,130,NA,None,0,1,0
+2663481,None,None,None,129,130,0~14,0,Margibi,124,NA,None,0,1,0
+2663549,1284958,96,102,112,113,15~44,0,Margibi,107,NA,None,0,1,0
+2663551,None,None,None,NA,NA,0~14,0,Margibi,115,NA,128,0,NA,0
+2663552,2663555,104,113,120,122,0~14,0,Margibi,117,NA,NA,0,1,0
+2663554,None,None,116,126,127,0~14,0,Margibi,None,NA,NA,0,1,0
+2663555,None,None,None,112,115,0~14,0,Margibi,104,NA,NA,0,1,0
+2724342,None,None,122,132,133,45~100,0,Margibi,125,NA,NA,0,1,0
+2724343,None,None,None,NA,NA,45~100,0,Margibi,107,NA,None,0,NA,0
+2724344,None,None,109,118,119,45~100,0,Margibi,111,NA,None,0,1,0
+2724345,None,None,123,135,137,15~44,0,Margibi,None,NA,NA,0,1,0
+2724346,None,None,106,113,115,15~44,0,Margibi,111,NA,None,0,1,0
+2724348,1141679,96,101,111,114,15~44,0,Margibi,None,NA,NA,0,1,0
+2728732,None,None,128,138,139,0~14,0,Margibi,None,NA,NA,0,1,0
+2728748,None,None,116,127,128,15~44,0,Margibi,None,NA,NA,0,1,0
+2728809,None,None,119,130,133,45~100,0,Margibi,126,NA,None,0,1,0
+2735540,None,None,113,120,121,15~44,0,Margibi,118,NA,NA,0,1,0
+2737206,2510197,113,None,131,132,15~44,0,Margibi,129,NA,NA,0,1,0
+2748703,4164741,123,None,138,139,15~44,0,Margibi,136,NA,None,0,1,0
+3574020,None,None,None,NA,NA,0~14,0,Montserrado,None,NA,None,0,NA,0
+3680631,1682898,111,115,NA,NA,15~44,1,Montserrado,120,NA,None,0,NA,0
+3680632,None,None,128,136,138,15~44,0,Montserrado,None,NA,NA,0,1,0
+3971186,None,None,126,NA,NA,15~44,1,Montserrado,131,NA,None,0,NA,0
+4146850,None,None,126,133,135,15~44,0,Montserrado,None,NA,None,0,1,0
+4164649,4164803,91,100,113,115,15~44,0,Montserrado,107,NA,NA,0,1,0
+4164650,None,None,114,121,124,15~44,0,Montserrado,116,NA,NA,0,1,0
+4164706,None,None,101,114,116,15~44,0,Montserrado,None,NA,None,0,1,0
+4164741,None,None,120,130,132,45~100,0,Montserrado,126,NA,NA,0,1,0
+4164803,None,None,90,100,101,45~100,0,Montserrado,93,NA,NA,0,1,0
+4164804,None,None,None,120,122,45~100,0,Montserrado,None,NA,None,0,1,0
+4164856,4164857,114,None,136,137,15~44,0,Montserrado,None,NA,NA,0,1,0
+4164857,None,None,110,NA,NA,15~44,0,Montserrado,None,NA,None,0,NA,0
+4168339,None,None,None,135,136,15~44,0,Montserrado,None,NA,None,0,1,0
+4202414,None,None,127,137,139,15~44,0,Montserrado,132,NA,NA,0,1,0
+4221881,1682898,109,117,131,133,15~44,0,Montserrado,126,NA,NA,0,1,0
+4221883,None,None,None,134,136,15~44,0,Montserrado,None,NA,None,0,1,0
+4238116,None,None,99,107,109,15~44,0,Montserrado,None,NA,NA,0,1,0
+4238117,None,None,101,112,115,45~100,0,Montserrado,None,NA,NA,0,1,0
+4260715,None,None,112,120,122,45~100,0,Montserrado,None,NA,None,0,1,0
+4272048,4168338,113,122,135,137,15~44,0,Montserrado,131,NA,None,0,1,0
+4284541,None,None,None,136,138,45~100,0,Montserrado,None,NA,None,0,1,0
+4284542,None,None,None,134,137,45~100,0,Montserrado,134,NA,NA,0,1,0
+4287150,1405875,3,12,NA,NA,15~44,0,Montserrado,13,NA,None,0,NA,0
+4302905,None,None,119,126,129,15~44,0,Montserrado,None,NA,NA,0,1,0
+4302906,None,None,122,135,136,15~44,0,Montserrado,None,NA,None,0,1,0
+4320258,None,None,124,135,138,15~44,0,Montserrado,None,NA,None,0,1,0
+4355034,4168338,116,124,132,134,15~44,0,Montserrado,None,NA,None,0,1,0
