@@ -311,10 +311,9 @@ for (nb in region.nb) {
                     output_file_name = output_file_name)
 
     run_adapted$model$write_model_file(paste0(sub("\\.nc$", ".bi", output_file_name)))
-    
 
     ############################################################################
-    ## predict a year                                                         ##
+    ## predict
     ############################################################################
 
     prediction_options <- global_options
