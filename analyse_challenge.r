@@ -299,18 +299,18 @@ for (time.point in time.points)
     keep_counties <- max.cases[max.value > 5]
     plot.cases <- cases[["time.5"]][[1]][county %in% keep_counties[, county]]
 
-    agg <- predictions_point[county %in% keep_counties[, county], list(mean = median(value), min.1 = quantile(value, 0.25), max.1 = quantile(value, 0.75), min.2 = quantile(value, 0.025), max.2 = quantile(value, 0.975)), by = c("county", "time")]
+    agg <- predictions_point[county %in% keep_counties[, county], list(median = median(value), min.1 = quantile(value, 0.25), max.1 = quantile(value, 0.75), min.2 = quantile(value, 0.025), max.2 = quantile(value, 0.975)), by = c("county", "time")]
     agg[, week := time / 7]
 
     agg <- merge(agg, max.cases, by = "county", all.x = TRUE)
     agg[max.2 > max.value * 2, max.2 := max.value * 2]
     agg[max.1 > max.value * 2, max.1 := max.value * 2]
-    agg[mean > max.value * 2, mean := NA]
+    agg[median > max.value * 2, median := NA]
     agg[min.1 > max.value * 2, min.1 := max.value * 2]
     agg[min.2 > max.value * 2, min.2 := max.value * 2]
     agg[min.1 < 0, min.1 := 0]
     agg[min.2 < 0, min.2 := 0]
-    agg[mean < 0, mean := 0]
+    agg[median < 0, median := 0]
 
     max.data <- data.time.points[point == time.point, time]
 
@@ -331,7 +331,7 @@ for (time.point in time.points)
 
     for (horizon in c(7, 52))
     {
-      p <- ggplot(fit[week > max.data - horizon & week < max.data + horizon + 2], aes(x = week, y = mean)) +
+      p <- ggplot(fit[week > max.data - horizon & week < max.data + horizon + 2], aes(x = week, y = median)) +
         geom_line() +
         geom_ribbon(aes(ymin = min.1, ymax = max.1), alpha = 0.5) +
         geom_ribbon(aes(ymin = min.2, ymax = max.2), alpha = 0.25) +
@@ -352,7 +352,7 @@ for (time.point in time.points)
       }
       trajectories <- rbindlist(r0_trajectories[[tp]][[1]])
 
-      agg.r0 <- trajectories[county %in% keep_counties[, county], list(mean = median(value), min.1 = quantile(value, 0.25), max.1 = quantile(value, 0.75), min.2 = quantile(value, 0.025), max.2 = quantile(value, 0.975)), by = c("county", "time")]
+      agg.r0 <- trajectories[county %in% keep_counties[, county], list(median = median(value), min.1 = quantile(value, 0.25), max.1 = quantile(value, 0.75), min.2 = quantile(value, 0.025), max.2 = quantile(value, 0.975)), by = c("county", "time")]
       agg.r0[, week := time / 7]
       agg.r0[, county := factor(county, levels = county_levels)]
       agg.r0 <- agg.r0[week <= max.data]
@@ -361,7 +361,7 @@ for (time.point in time.points)
       agg.pred <- rbind(agg.r0[week == max.data][, week := week + 1],
                         agg.r0[week == max.data][, week := week + horizon + 1])
 
-      p <- ggplot(agg.r0, aes(x = week, y = mean)) +
+      p <- ggplot(agg.r0, aes(x = week, y = median)) +
         geom_line() +
         geom_ribbon(aes(ymin = min.1, ymax = max.1), alpha = 0.5) +
         geom_ribbon(aes(ymin = min.2, ymax = max.2), alpha = 0.25) +
@@ -387,7 +387,7 @@ for (time.point in time.points)
     params_point <- rbindlist(param_data[[tp]][[1]])
     params_point <- params_point[county %in% keep_counties[, county]]
     params_point[, county := factor(county, levels = county_levels)]
-    params_point_summary <- params_point[, list(mean = mean(value),
+    params_point_summary <- params_point[, list(median = median(value),
                                                 min = quantile(value, 0.25),
                                                 max = quantile(value, 0.75)),
                                          by = list(parameter, distribution, varying, county)]
@@ -413,7 +413,7 @@ pred <- apply(unique(compare[, list(add.weeks, point)]), 1, function(x)
 {
   data.frame(inside.50 = compare[add.weeks == x[["add.weeks"]] & point == x[["point"]], sum(min.1 < value & max.1 > value) / .N], 
             inside.95 = compare[add.weeks == x[["add.weeks"]] & point == x[["point"]], sum(min.2 < value & max.2 > value) / .N],
-            greater.mean = compare[add.weeks == x[["add.weeks"]] & point == x[["point"]], sum(mean > value, na.rm = TRUE) / .N], 
+            greater.median = compare[add.weeks == x[["add.weeks"]] & point == x[["point"]], sum(median < value, na.rm = TRUE) / .N], 
             weeks = x[["add.weeks"]], time.point = x[["point"]])
 })
 
@@ -425,7 +425,7 @@ mp$time.point <- unlist(mp$time.point)
 mp$value <- unlist(mp$value)
 mp[variable == "inside.50", variable := "inside 50% CI"]
 mp[variable == "inside.95", variable := "inside 95% CI"]
-mp[variable == "greater.mean", variable := "greater than median"]
+mp[variable == "greater.median", variable := "greater than median"]
 
 ideal <- data.frame(variable = unique(mp$variable),
                     value = c(0.5, 0.95, 0.5))
