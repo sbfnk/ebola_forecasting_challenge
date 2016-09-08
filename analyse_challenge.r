@@ -215,6 +215,7 @@ for (time.point in time.points)
 }
 
 saveRDS(predictions, "predictions.rds")
+saveRDS(list(full = full_predictions, param = param_data, cases = cases, r0_trajectories = r0_trajectories), "full_predictions.rds")
 
 ## get peak timing
 peak_timing <- matrix(unlist(lapply(predictions, function(x)
