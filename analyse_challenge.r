@@ -278,6 +278,12 @@ disease_params <- cbind(R0, gen_time, cfr, reporting)
 write.table(disease_params, file = "disease_param.csv", row.names = FALSE,
             col.names = FALSE, sep = ",")
 
+temp <- readRDS("full_predictions.rds")
+full_predictions <- temp$full
+cases <- temp$cases
+r0_trajectories <- temp$r0_trajectories
+param_data <- temp$param
+
 model_data <- list()
 for (time.point in time.points)
 {
@@ -285,7 +291,8 @@ for (time.point in time.points)
 
     for (name in names(full_predictions[[tp]][[1]]))
     {
-      full_predictions[[tp]][[1]][[name]][, county := name]
+      full_predictions[[tp]][[1]][[name]] <-
+        full_predictions[[tp]][[1]][[name]][, county := name]
     }
     predictions_point <- rbindlist(full_predictions[[tp]][[1]])
 
@@ -383,11 +390,13 @@ for (time.point in time.points)
 
     for (name in names(param_data[[tp]][[1]]))
     {
-      param_data[[tp]][[1]][[name]][, county := name]
+      param_data[[tp]][[1]][[name]] <-
+        param_data[[tp]][[1]][[name]][, county := name]
     }
     params_point <- rbindlist(param_data[[tp]][[1]])
     params_point <- params_point[county %in% keep_counties[, county]]
-    params_point[, county := factor(county, levels = county_levels)]
+    params_point <-
+      params_point[, county := factor(county, levels = county_levels)]
     params_point_summary <- params_point[, list(median = median(value),
                                                 min = quantile(value, 0.25),
                                                 max = quantile(value, 0.75)),
@@ -428,13 +437,30 @@ mp[variable == "inside.50", variable := "inside 50% CI"]
 mp[variable == "inside.95", variable := "inside 95% CI"]
 mp[variable == "greater.median", variable := "greater than median"]
 
+saveRDS(mp, "summary_predictions.rds")
+
 ideal <- data.frame(variable = unique(mp$variable),
                     value = c(0.5, 0.95, 0.5))
 
-p <- ggplot(mp) +
-  geom_point(aes(x = weeks, y = value, shape = factor(time.point))) +
+mp_agg <- mp[, list(value = mean(value)), by = list(weeks, variable)]
+
+p <- ggplot(mp_agg) +
+  geom_point(aes(x = weeks, y = value)) + 
   geom_hline(data = ideal, aes(yintercept = value)) +
   facet_wrap(~ variable, ncol = 3) +
+  scale_x_continuous(limits = c(0, 7)) +
   scale_y_continuous("proportion of observations", limits = c(0, 1))
 ggsave("challenge_forecasting_performance.pdf", p, height = 3, width = 7)
+
+for (this.time.point in time.points[-length(time.points)])
+{
+  p <- ggplot(mp[time.point == this.time.point]) +
+    geom_point(aes(x = weeks, y = value)) + 
+    geom_hline(data = ideal, aes(yintercept = value)) +
+    facet_wrap(~ variable, ncol = 3) +
+    scale_y_continuous("proportion of observations", limits = c(0, 1))
+  ggsave(paste0("challenge_forecasting_performance_",
+                this.time.point, ".pdf"),
+         p, height = 3, width = 7)
+}
 
