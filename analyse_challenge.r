@@ -359,11 +359,11 @@ for (scenario in 1:4)
     max.data <- max(cases[[tp]][[scenario]]$week)
 
     agg <-
-      predictions_point[, list(median = floor(median(value)),
-                             min.1 = floor(quantile(value, 0.25)),
-                             max.1 = floor(quantile(value, 0.75)),
-                             min.2 = floor(quantile(value, 0.025)),
-                             max.2 = floor(quantile(value, 0.975))),
+      predictions_point[, list(median = round(median(value)),
+                             min.1 = round(quantile(value, 0.25)),
+                             max.1 = round(quantile(value, 0.75)),
+                             min.2 = round(quantile(value, 0.025)),
+                             max.2 = round(quantile(value, 0.975))),
                         by = c("county", "time")]
     agg[, week := time / 7]
 
@@ -578,7 +578,8 @@ compare <- rbindlist(lapply(model_data, rbindlist))
 
 compare[, inside.50 := (value >= min.1 & value <= max.1)]
 compare[, inside.95 := (value >= min.2 & value <= max.2)]
-compare[, greater.median := (value >= median)]
+compare[, greater.median := as.numeric(value >= median)]
+compare[value == median, greater.median := 0.5]
 saveRDS(compare, "summary_predictions.rds")
 
 compare <- readRDS("summary_predictions.rds")
@@ -597,8 +598,8 @@ p <- ggplot(mp_agg, aes(x = add.weeks, y = mean, ymin = lower, ymax = upper)) +
   ## geom_line(aes(x = add.weeks, y = value)) +
   geom_hline(data = ideal, aes(yintercept = value)) +
   facet_wrap(~ variable, ncol = 3) +
-  scale_x_continuous("number of weeks forecast", limits = c(0, 20)) +
-  scale_y_continuous("proportion of observations", limits = c(0, 1))
+  scale_x_continuous("number of weeks forecast", limits = c(0, 10), breaks = pretty_breaks()) +
+  scale_y_continuous("proportion of observations", limits = c(0, 1), breaks = pretty_breaks(), labels = percent)
 
 ggsave("challenge_forecasting_performance.pdf", p, height = 3, width = 7)
 
