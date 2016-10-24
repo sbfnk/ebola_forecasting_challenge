@@ -83,8 +83,8 @@ if (!any(grep("\\.nc", output)))
     output <- paste(output, "nc", sep = ".")
 }
 
-library('RBi')
-library('RBi.helpers')
+library('rbi')
+library('rbi.helpers')
 library('data.table')
 
 date()

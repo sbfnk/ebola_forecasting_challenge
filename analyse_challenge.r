@@ -1,5 +1,5 @@
-library('RBi')
-library('RBi.helpers')
+library('rbi')
+library('rbi.helpers')
 library('data.table')
 library('truncnorm')
 library('scales')
