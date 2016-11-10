@@ -540,7 +540,7 @@ for (time.point in time.points)
 
   ggsave(paste0("challenge_incidence_scenarios_", time.point, "_", horizon, "_blank.pdf"), p, height = 2.5, width = 12)
   ggsave(paste0("challenge_incidence_scenarios_", time.point, "_", horizon, ".pdf"),
-         p + ggtitle(paste0("Time point ", time.point, ", fit and prediction")), height = 2.5, width = 12)
+         p + ggtitle(paste0("Time point ", time.point, ", national fit and prediction")), height = 2.5, width = 12)
 
   agg.r0 <-
     liberia.traj[,
@@ -571,7 +571,7 @@ for (time.point in time.points)
 
   ggsave(paste0("challenge_r0_scenarios_", time.point, "_", horizon,  "_blank.pdf"), p, height = 10, width = 10)
   ggsave(paste0("challenge_r0_scenarios_", time.point, "_", horizon,  ".pdf"),
-         p + ggtitle(paste0("Time point ", time.point, ", reproduction number")), height = 10, width = 10)
+         p + ggtitle(paste0("Time point ", time.point, ", national reproduction number")), height = 10, width = 10)
 }
 
 compare <- rbindlist(lapply(model_data, rbindlist))
@@ -591,6 +591,9 @@ mp_agg[variable == "inside.50", variable := "inside 50% CI"]
 mp_agg[variable == "inside.95", variable := "inside 95% CI"]
 mp_agg[variable == "greater.median", variable := "greater than median"]
 
+ideal <- data.frame(variable = unique(mp_agg$variable),
+                    value = c(0.5, 0.95, 0.5))
+
 p <- ggplot(mp_agg, aes(x = add.weeks, y = mean, ymin = lower, ymax = upper)) +
   geom_point() +
   geom_errorbar() +
@@ -608,8 +611,6 @@ mp <- melt(data.table(pred), id.vars = c("add.weeks", "point", "scenario"))
 mp[variable == "inside.50", variable := "inside 50% CI"]
 mp[variable == "inside.95", variable := "inside 95% CI"]
 mp[variable == "greater.median", variable := "greater than median"]
-
-ideal <- data.frame(variable = unique(mp$variable), value = c(0.5, 0.95, 0.5))
 
 p <- ggplot(mp) +
   geom_point(aes(x = add.weeks, y = value, color = factor(scenario))) +
