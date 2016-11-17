@@ -540,7 +540,7 @@ for (time.point in time.points)
 
   ggsave(paste0("challenge_incidence_scenarios_", time.point, "_", horizon, "_blank.pdf"), p, height = 2.5, width = 12)
   ggsave(paste0("challenge_incidence_scenarios_", time.point, "_", horizon, ".pdf"),
-         p + ggtitle(paste0("Time point ", time.point, ", fit and prediction")), height = 2.5, width = 12)
+         p + ggtitle(paste0("Time point ", time.point, ", national fit and prediction")), height = 2.5, width = 12)
 
   agg.r0 <-
     liberia.traj[,
@@ -571,7 +571,7 @@ for (time.point in time.points)
 
   ggsave(paste0("challenge_r0_scenarios_", time.point, "_", horizon,  "_blank.pdf"), p, height = 10, width = 10)
   ggsave(paste0("challenge_r0_scenarios_", time.point, "_", horizon,  ".pdf"),
-         p + ggtitle(paste0("Time point ", time.point, ", reproduction number")), height = 10, width = 10)
+         p + ggtitle(paste0("Time point ", time.point, ", national reproduction number")), height = 10, width = 10)
 }
 
 compare <- rbindlist(lapply(model_data, rbindlist))
