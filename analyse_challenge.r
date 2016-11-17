@@ -591,6 +591,8 @@ mp_agg[variable == "inside.50", variable := "inside 50% CI"]
 mp_agg[variable == "inside.95", variable := "inside 95% CI"]
 mp_agg[variable == "greater.median", variable := "greater than median"]
 
+ideal <- data.frame(variable = unique(mp_agg$variable), value = c(0.5, 0.95, 0.5))
+
 p <- ggplot(mp_agg, aes(x = add.weeks, y = mean, ymin = lower, ymax = upper)) +
   geom_point() +
   geom_errorbar() +
@@ -598,7 +600,7 @@ p <- ggplot(mp_agg, aes(x = add.weeks, y = mean, ymin = lower, ymax = upper)) +
   ## geom_line(aes(x = add.weeks, y = value)) +
   geom_hline(data = ideal, aes(yintercept = value)) +
   facet_wrap(~ variable, ncol = 3) +
-  scale_x_continuous("number of weeks forecast", limits = c(0, 10), breaks = pretty_breaks()) +
+  scale_x_continuous("number of weeks forecast", limits = c(0, 10.9), breaks = pretty_breaks()) +
   scale_y_continuous("proportion of observations", limits = c(0, 1), breaks = pretty_breaks(), labels = percent)
 
 ggsave("challenge_forecasting_performance.pdf", p, height = 3, width = 7)
@@ -608,8 +610,6 @@ mp <- melt(data.table(pred), id.vars = c("add.weeks", "point", "scenario"))
 mp[variable == "inside.50", variable := "inside 50% CI"]
 mp[variable == "inside.95", variable := "inside 95% CI"]
 mp[variable == "greater.median", variable := "greater than median"]
-
-ideal <- data.frame(variable = unique(mp$variable), value = c(0.5, 0.95, 0.5))
 
 p <- ggplot(mp) +
   geom_point(aes(x = add.weeks, y = value, color = factor(scenario))) +
